@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 {/* TODO: Mudar foto */}
 import profilepic from "../assets/profpic.png";
 import { TypeAnimation } from "react-type-animation";
@@ -26,7 +27,17 @@ import {
 } from "react-icons/si";
 
 
+
 const Hero = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const openModal = () => {
+        setModalIsOpen(true);
+      };
+    
+      const closeModal = () => {
+        setModalIsOpen(false);
+      };
     return (
         <div className='mt-24 max-w-[1250px] mx-auto relative'>
             <div className='grid md:grid-cols-2 place-items-center gap-8 p-12'>
@@ -80,15 +91,37 @@ const Hero = () => {
                     transition={{ duration: 1, delay: 1.5 }}
                     className="flex flex-row items-center gap-6 my-4 md:mb-0"
                     >   
-                        <motion.a 
-                            whileHover={{ scale: 1.05, boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.3)' }} 
-                            className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl"  
-                            href="/CV.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                        Download CV
-                        </motion.a>
+                            <motion.a 
+                                whileHover={{ scale: 1.05, boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.3)' }} 
+                                className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl"  
+                                onClick={openModal}
+                            >
+                                Download CV
+                            </motion.a>
+                            <Modal
+                                isOpen={modalIsOpen}
+                                onRequestClose={closeModal}
+                                contentLabel="Select CV"
+                                className="bg-purple-900 border border-purple-400 p-4 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[400px] z-50 backdrop-blur-md bg-opacity-20"
+                                overlayClassName="fixed inset-0 bg-black bg-opacity-50 z-40 "
+
+                                // flex flex-col items-start gap-4 my-4 md:mb-0
+                            >
+                                <h2 className='text-purple-700 pb-4 text-4xl'>
+                                    Select CV language
+                                </h2>
+                                <div className='flex flex-col gap-4 items-start text-xl text-white'>
+                                    <button 
+                                    onClick={() => window.location.href = '/Paulo Macedo - CV - PT-BR.pdf'}
+                                    >    
+                                        Brazillian Portuguese
+                                    </button>
+                                    <button onClick={() => window.location.href = '/CV-EN.pdf'}>
+                                        English
+                                    </button>
+                                    {/* <button onClick={closeModal}>Close</button> */}
+                                </div>
+                            </Modal>
 
                         <div className='flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20'>
                             <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/paulemacedo">
