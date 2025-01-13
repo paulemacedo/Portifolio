@@ -116,7 +116,7 @@ const Hero = () => {
                                     >    
                                         Brazillian Portuguese
                                     </button>
-                                    <button onClick={() => window.location.href = '/CV-EN.pdf'}>
+                                    <button onClick={() => window.location.href = '#'}>
                                         English
                                     </button>
                                     {/* <button onClick={closeModal}>Close</button> */}
