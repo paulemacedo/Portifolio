@@ -1,11 +1,20 @@
-import React from "react";
 import Archemy from "../assets/Archemy.png";
 import pybank from "../assets/pyBank.png";
 import CTF from "../assets/CTF.png";
 import { AiFillGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
+import React from "react";
 
 const projects = [
+    {
+        img: Archemy,
+        title: 'Byte de Sabor',
+        description: 'Byte de Sabor is a açai store website developed using React. It features a modern and responsive design, showcasing the store’s products and services. This project demonstrates my proficiency in front-end development and my ability to create visually appealing and user-friendly websites.',
+        links: {
+            site: 'bytedesabor.vercel.app/',
+            github: 'https://github.com/paulemacedo/bytedesabor',
+        }
+    },
     {
         img: Archemy,
         title: 'Archemy',
@@ -13,15 +22,6 @@ const projects = [
         links: {
             site: 'https://github.com/paulemacedo/Archemy',
             github: 'https://github.com/paulemacedo/Archemy',
-        }
-    },
-    {
-        img: pybank,
-        title: 'PyBank',
-        description: 'PyBank is a Python-based banking system project showcasing my skills in developing robust financial applications. It features account management, transaction handling, and user authentication. This project demonstrates my proficiency in Python and my ability to create reliable, secure, and efficient software solutions.',
-        links: {
-            site: 'https://github.com/paulemacedo/PyBank',
-            github: 'https://github.com/paulemacedo/PyBank',
         }
     },
     {
@@ -33,7 +33,16 @@ const projects = [
             site: 'https://github.com/paulemacedo/CTF',
             github: 'https://github.com/paulemacedo/CTF',
         }
-    }
+    },
+    {
+        img: pybank,
+        title: 'PyBank',
+        description: 'PyBank is a Python-based banking system project showcasing my skills in developing robust financial applications. It features account management, transaction handling, and user authentication. This project demonstrates my proficiency in Python and my ability to create reliable, secure, and efficient software solutions.',
+        links: {
+            site: 'https://github.com/paulemacedo/PyBank',
+            github: 'https://github.com/paulemacedo/PyBank',
+        }
+    },
 ];
 
 
