@@ -4,6 +4,7 @@ import profilepic from "../assets/profpic.png";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import { motion } from "framer-motion"; 
+import { useTranslation } from 'react-i18next';
 import { 
     AiOutlineGithub,
     AiOutlineLinkedin,
@@ -25,10 +26,9 @@ import {
     SiGnubash,
 } from "react-icons/si";
 
-
-
 const Hero = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const { t } = useTranslation();
 
     const openModal = () => {
         setModalIsOpen(true);
@@ -66,7 +66,7 @@ const Hero = () => {
                         transition={{ duration: 1, delay: 0.5 }}
                         className='text-gray-200 md:text-5xl tracking-tight mb-4'
                     >
-                        HEY, I'M <br /> 
+                        {t('hero.greeting')} <br /> 
                         <span className='text-purple-500'>PAULE MACEDO</span>
 
                     </motion.p>
@@ -78,7 +78,7 @@ const Hero = () => {
                         transition={{ duration: 1, delay: 0.5 }}
                         className='text-gray-300 max-w-[300px] md:text-2xl text-lg mb-6 md:max-w-[500px]'
                     >
-                        I'm a full stack developer based in Brazil. I have a passion for creating and developing web applications. I'm also a cybersecurity enthusiast.                        
+                        {t('hero.description')}                        
 
                     </motion.p>
                     
@@ -107,16 +107,16 @@ const Hero = () => {
                                 // flex flex-col items-start gap-4 my-4 md:mb-0
                             >
                                 <h2 className='text-purple-700 pb-4 text-4xl'>
-                                    Select CV language
+                                  {t('hero.select_cv_language')}
                                 </h2>
                                 <div className='flex flex-col gap-4 items-start text-xl text-white'>
                                     <button 
                                     onClick={() => window.location.href = '/Paulo Macedo - CV - PT-BR.pdf'}
                                     >    
-                                        Brazillian Portuguese
-                                    </button>
+                                      {t('hero.brazilian_portuguese')}
+                                  </button>
                                     <button onClick={() => window.location.href = '#'}>
-                                        English
+                                        {t('hero.english')}
                                     </button>
                                     {/* <button onClick={closeModal}>Close</button> */}
                                 </div>

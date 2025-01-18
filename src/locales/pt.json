@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "greeting": "OLÁ, EU SOU",
+    "description": "Sou um desenvolvedor full stack baseado no Brasil. Tenho paixão por criar e desenvolver aplicações web. Também sou entusiasta de cibersegurança.",
+    "download_cv": "Baixar CV",
+    "select_cv_language": "Selecione o idioma",
+    "brazilian_portuguese": "Português Brasileiro",
+    "english": "Inglês"
+  }
+}
