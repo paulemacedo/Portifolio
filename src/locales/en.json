@@ -6,5 +6,18 @@
     "select_cv_language": "Select CV language",
     "brazilian_portuguese": "Brazilian Portuguese",
     "english": "English"
+  },
+  "navbar": {
+    "education": "Education",
+    "skills": "Skills",
+    "portfolio": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "education": {
+    "title": "Education",
+    "institution": "CEFET-RJ",
+    "degree": "Bachelor of Science in Computer Science",
+    "graduationDate": "August 2026"
   }
 }

@@ -1,3 +1,4 @@
+// filepath: /home/paule/code/Portifoliov2/src/components/Navbar.jsx
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
@@ -8,7 +9,7 @@ import Logo from '../assets/logo.svg';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const toggleNav = () => {
     setNav(!nav);
@@ -46,11 +47,11 @@ const Navbar = () => {
           <img src={Logo} alt="logo" className='w-10 h-10' />
         </a>
         <ul className='hidden md:flex gap-12 z-10 cursor-pointer'>
-          <li><Link to='education' smooth={true} offset={-80} duration={500}>Education</Link></li>
-          <li><Link to='skills' smooth={true} offset={-50} duration={500}>Skills</Link></li>
-          <li><Link to='portfolio' smooth={true} offset={-50} duration={500}>Projects</Link></li>
-          <li><Link to='experience' smooth={true} offset={-80} duration={500}>Experience</Link></li>
-          <li><Link to='about' smooth={true} offset={-50} duration={500}>Contact</Link></li>
+          <li><Link to='education' smooth={true} offset={-80} duration={500}>{t('navbar.education')}</Link></li>
+          <li><Link to='skills' smooth={true} offset={-50} duration={500}>{t('navbar.skills')}</Link></li>
+          <li><Link to='portfolio' smooth={true} offset={-50} duration={500}>{t('navbar.portfolio')}</Link></li>
+          <li><Link to='experience' smooth={true} offset={-80} duration={500}>{t('navbar.experience')}</Link></li>
+          <li><Link to='about' smooth={true} offset={-50} duration={500}>{t('navbar.contact')}</Link></li>
           <li>
             <select onChange={(e) => changeLanguage(e.target.value)} className='bg-transparent border-none text-gray-200'>
               <option value="en" className='text-black'>
@@ -74,11 +75,11 @@ const Navbar = () => {
           className='fixed top-0 left-0 w-full min-h-screen bg-gray-900 z-40'
         >
           <ul className='font-semibold text-4xl space-y-8 mt-24 text-center'>
-            <li><Link to="education" onClick={closeNav} smooth={true} offset={-80} duration={500}>Education</Link></li>
-            <li><Link to="skills" onClick={closeNav} smooth={true} offset={-50} duration={500}>Skills</Link></li>
-            <li><Link to="portfolio" onClick={closeNav} smooth={true} offset={-50} duration={500}>Projects</Link></li>
-            <li><Link to="experience" onClick={closeNav} smooth={true} offset={-80} duration={500}>Experience</Link></li>
-            <li><Link to="about" onClick={closeNav} smooth={true} offset={-50} duration={500}>Contact</Link></li>
+            <li><Link to="education" onClick={closeNav} smooth={true} offset={-80} duration={500}>{t('navbar.education')}</Link></li>
+            <li><Link to="skills" onClick={closeNav} smooth={true} offset={-80} duration={500}>{t('navbar.skills')}</Link></li>
+            <li><Link to="portfolio" onClick={closeNav} smooth={true} offset={-80} duration={500}>{t('navbar.portfolio')}</Link></li>
+            <li><Link to="experience" onClick={closeNav} smooth={true} offset={-80} duration={500}>{t('navbar.experience')}</Link></li>
+            <li><Link to="about" onClick={closeNav} smooth={true} offset={-50} duration={500}>{t('navbar.contact')}</Link></li>
             <li>
               <select onChange={(e) => changeLanguage(e.target.value)} className='bg-transparent border-none text-gray-200'>
                 <option value="en" className='text-black'>

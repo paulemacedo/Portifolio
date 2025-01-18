@@ -6,5 +6,18 @@
     "select_cv_language": "Selecione o idioma",
     "brazilian_portuguese": "Português Brasileiro",
     "english": "Inglês"
+  },
+  "navbar": {
+    "education": "Educação",
+    "skills": "Habilidades",
+    "portfolio": "Projetos",
+    "experience": "Experiência",
+    "contact": "Contato"
+  },
+  "education": {
+    "title": "Educação",
+    "institution": "CEFET-RJ",
+    "degree": "Bacharel em Ciência da Computação",
+    "graduationDate": "Agosto 2026"
   }
 }
