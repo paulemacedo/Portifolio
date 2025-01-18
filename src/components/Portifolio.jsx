@@ -1,5 +1,6 @@
 import Archemy from "../assets/Archemy.png";
 import pybank from "../assets/pyBank.png";
+import bytedesabor from "../assets/bytedesabor.png";
 import CTF from "../assets/CTF.png";
 import { AiFillGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
@@ -7,7 +8,7 @@ import React from "react";
 
 const projects = [
     {
-        img: Archemy,
+        img: bytedesabor,
         title: 'Byte de Sabor',
         description: 'Byte de Sabor is a açai store website developed using React. It features a modern and responsive design, showcasing the store’s products and services. This project demonstrates my proficiency in front-end development and my ability to create visually appealing and user-friendly websites.',
         links: {
