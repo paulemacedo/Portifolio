@@ -84,7 +84,7 @@ const Hero = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 1.5 }}
-                    className="flex flex-col items-start md:flex-row gap-6 my-4 md:mb-0"
+                    className="flex flex-col items-center md:flex-row gap-6 my-4 md:mb-0"
                 >   
                     <motion.a 
                     whileHover={{ scale: 1.05, boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.3)' }} 
