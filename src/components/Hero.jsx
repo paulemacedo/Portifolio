@@ -47,7 +47,7 @@ const Hero = () => {
     ];
     
     return (
-        <div className='mt-24 max-w-[1250px] mx-auto relative'>
+        <div className='mt-24 max-w-[1000px] mx-auto relative'>
             <div className='grid md:grid-cols-2 place-items-center gap-8 p-12'>
                 <motion.div
                 initial={{ opacity: 0, x: -50 }}
@@ -89,11 +89,11 @@ const Hero = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 1.5 }}
-                    className="flex flex-col items-center md:flex-row gap-6 my-4 md:mb-0"
+                    className="flex items-center flex-col md:flex-row gap-6 my-4 md:mb-0"
                 >   
                     <motion.a 
                     whileHover={{ scale: 1.05, boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.3)' }} 
-                    className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl"  
+                    className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-3 border border-purple-400 rounded-xl"  
                     onClick={openModal}
                     >
                     Download CV
@@ -102,7 +102,7 @@ const Hero = () => {
                     isOpen={modalIsOpen}
                     onRequestClose={closeModal}
                     contentLabel="Select CV"
-                    className="bg-purple-900 border border-purple-400 p-4 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[400px] z-50 backdrop-blur-md bg-opacity-20"
+                    className="bg-purple-900 border border-opacity-50 border-purple-400 p-4 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[400px] z-50 backdrop-blur-md bg-opacity-20"
                     overlayClassName="fixed inset-0 bg-black bg-opacity-50 z-40 "
                     >
                     <h2 className='text-purple-700 pb-4 text-4xl'>
@@ -120,7 +120,7 @@ const Hero = () => {
                     </div>
                     </Modal>
 
-                    <div className='flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20'>
+                    <div className='flex gap-6 flex-row text-4xl xl:text-6xl md:text-5xl text-purple-400 z-20'>
                     <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/paulemacedo">
                         <AiOutlineGithub />
                     </motion.a>
