@@ -47,10 +47,10 @@ const Hero = () => {
                 transition={{ duration: 1 }}
                 >   
                     <TypeAnimation
-                        sequence={[
-                            "Fullstack Dev",
+                        sequence={[                        
+                            t('hero.software_engineer'),
                             1000,
-                            "Cybersecurity",
+                            t('hero.cybersecurity'),
                             1000
                         ]}
                         repeat={Infinity}

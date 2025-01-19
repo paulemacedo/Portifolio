@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "./Reveal";
+import { useTranslation } from 'react-i18next';
 
 import { 
     DiCss3,
@@ -24,55 +25,59 @@ import {
     SiCplusplus,
 } from "react-icons/si";
 
-const skills = [
-    {
-        category: 'Frontend',
-        technologies: [
-            { name: 'HTML5', icon: <DiHtml5 className="text-orange-600" /> },
-            { name: 'CSS3', icon: <DiCss3 className="text-blue-600" /> },
-            { name: 'JavaScript', icon: <DiJavascript className="text-yellow-500" /> },
-            { name: 'React', icon: <DiReact className="text-blue-500" /> },
-        ],
-    },
-    {
-        category: 'Backend',
-        technologies: [
-            { name: 'Python', icon: <DiPython className="text-blue-500" /> },
-            { name: 'Rust', icon: <DiRust className="text-orange-500" /> },
-            { name: 'C++', icon: <SiCplusplus className="text-blue-500" /> },
-        ],
-    },
-    {
-        category: 'Cybersecurity & Infrastructure',
-        technologies: [
-            { name: 'GitHub', icon: <DiGithubBadge className="text-white" /> },
-            { name: 'Linux', icon: <DiLinux className="text-white" /> },
-            { name: 'Bash', icon: <SiGnubash className="text-white" /> },
-            { name: 'Wireshark', icon: <SiWireshark className="text-blue-500" /> },
-            { name: 'Kali', icon: <SiKalilinux className="text-blue-500" /> },
-
-        ],
-    },
-    {
-        category: 'Design & creativity',
-        technologies: [
-            { name: 'Unity', icon: <DiUnitySmall className="text-gray-500" /> },
-            { name: 'DaVinci', icon: <SiDavinciresolve className="text-white" /> },
-            { name: 'Figma', icon: <SiFigma className="text-white" /> },
-        ],
-    },
-];
-
-
 
 
 const Skills = () => {
+
+    const { t } = useTranslation();
+
+    const skills = [
+        {
+            category: t('skills.frontend'),
+            technologies: [
+                { name: 'HTML5', icon: <DiHtml5 className="text-orange-600" /> },
+                { name: 'CSS3', icon: <DiCss3 className="text-blue-600" /> },
+                { name: 'JavaScript', icon: <DiJavascript className="text-yellow-500" /> },
+                { name: 'React', icon: <DiReact className="text-blue-500" /> },
+            ],
+        },
+        {
+            category: t('skills.backend'),
+            technologies: [
+                { name: 'Python', icon: <DiPython className="text-blue-500" /> },
+                { name: 'Rust', icon: <DiRust className="text-orange-500" /> },
+                { name: 'C++', icon: <SiCplusplus className="text-blue-500" /> },
+            ],
+        },
+        {
+            category: t('skills.cybersecurity_infrastructure'),
+            technologies: [
+                { name: 'GitHub', icon: <DiGithubBadge className="text-white" /> },
+                { name: 'Linux', icon: <DiLinux className="text-white" /> },
+                { name: 'Bash', icon: <SiGnubash className="text-white" /> },
+                { name: 'Wireshark', icon: <SiWireshark className="text-blue-500" /> },
+                { name: 'Kali', icon: <SiKalilinux className="text-blue-500" /> },
+    
+            ],
+        },
+        {
+            category: t('skills.design_creativity'),
+            technologies: [
+                { name: 'Unity', icon: <DiUnitySmall className="text-gray-500" /> },
+                { name: 'DaVinci', icon: <SiDavinciresolve className="text-white" /> },
+                { name: 'Figma', icon: <SiFigma className="text-white" /> },
+            ],
+        },
+    ];
+
     return (
         <div className='max-w-[650px] mx-auto flex flex-col justify-center px-4 text-gray-200 pb-8 md:py-12' id='skills'>
             <Reveal>
-                <h2 className='text-3xl font-bold mb-4 text-center'>Skills</h2>
+                <h2 className='text-3xl font-bold mb-4 text-center'>
+                    {t('skills.title')}
+                </h2>
                 <p className='text-center mb-8'>
-                    I have experience with the following technologies:
+                    {t('skills.description')}
                 </p>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>

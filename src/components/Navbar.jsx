@@ -1,11 +1,11 @@
-// filepath: /home/paule/code/Portifoliov2/src/components/Navbar.jsx
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import { FaFlagUsa, FaFlag } from 'react-icons/fa';
 import Logo from '../assets/logo.svg';
+import usFlag from '../assets/flags/USA.svg';
+import brFlag from '../assets/flags/BR.svg';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -46,21 +46,38 @@ const Navbar = () => {
         <a href='#'>
           <img src={Logo} alt="logo" className='w-10 h-10' />
         </a>
-        <ul className='hidden md:flex gap-12 z-10 cursor-pointer'>
+        <ul className='hidden md:flex gap-12 z-10 cursor-pointer items-center'>
           <li><Link to='education' smooth={true} offset={-80} duration={500}>{t('navbar.education')}</Link></li>
           <li><Link to='skills' smooth={true} offset={-50} duration={500}>{t('navbar.skills')}</Link></li>
           <li><Link to='portfolio' smooth={true} offset={-50} duration={500}>{t('navbar.portfolio')}</Link></li>
           <li><Link to='experience' smooth={true} offset={-80} duration={500}>{t('navbar.experience')}</Link></li>
           <li><Link to='about' smooth={true} offset={-50} duration={500}>{t('navbar.contact')}</Link></li>
-          <li>
-            <select onChange={(e) => changeLanguage(e.target.value)} className='bg-transparent border-none text-gray-200'>
-              <option value="en" className='text-black'>
-                <FaFlagUsa className='inline-block mr-2' /> EN
-              </option>
-              <option value="pt" className='text-black'>
-                <FaFlag className='inline-block mr-2' /> PT
-              </option>
-            </select>
+          <li className='relative group'> {/* Adicionei group de volta aqui */}
+            <div className='flex items-center gap-2 hover:text-white transition-colors duration-200 cursor-pointer'>
+              <img 
+                src={i18n.language === 'en' ? usFlag : brFlag} 
+                alt={i18n.language === 'en' ? 'EN' : 'PT-BR'} 
+                className='w-5 h-5 object-cover rounded-sm' 
+              />
+              {i18n.language === 'en' ? 'EN' : 'PT'}
+            </div>
+
+            <div className='invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute right-0 top-full mt-1  rounded-lg shadow-xl border border-purple-700 transition-all duration-200 min-w-[170px]'>
+              <div 
+                onClick={() => changeLanguage('en')} 
+                className='flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-purple-700 transition-colors duration-200 rounded-t-lg'
+              >
+                <img src={usFlag} alt="English" className='w-5 h-5 object-cover rounded-sm' /> 
+                English
+              </div>
+              <div 
+                onClick={() => changeLanguage('pt')} 
+                className='flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-purple-700 transition-colors duration-200 rounded-b-lg'
+              >
+                <img src={brFlag} alt="Português" className='w-5 h-5 object-cover rounded-sm' /> 
+                Portuguese
+              </div>
+            </div>
           </li>
         </ul>
 
@@ -80,16 +97,6 @@ const Navbar = () => {
             <li><Link to="portfolio" onClick={closeNav} smooth={true} offset={-80} duration={500}>{t('navbar.portfolio')}</Link></li>
             <li><Link to="experience" onClick={closeNav} smooth={true} offset={-80} duration={500}>{t('navbar.experience')}</Link></li>
             <li><Link to="about" onClick={closeNav} smooth={true} offset={-50} duration={500}>{t('navbar.contact')}</Link></li>
-            <li>
-              <select onChange={(e) => changeLanguage(e.target.value)} className='bg-transparent border-none text-gray-200'>
-                <option value="en" className='text-black'>
-                  <FaFlagUsa className='inline-block mr-2' /> EN
-                </option>
-                <option value="pt" className='text-black'>
-                  <FaFlag className='inline-block mr-2' /> PT
-                </option>
-              </select>
-            </li>
           </ul>
         </motion.div>
       </div>

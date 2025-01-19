@@ -1,5 +1,7 @@
 {
   "hero": {
+    "software_engineer": "Fullstack dev",
+    "cybersecurity": "Cybersecurity",
     "greeting": "HEY, I'M",
     "description": "I'm a full stack developer based in Brazil. I have a passion for creating and developing web applications. I'm also a cybersecurity enthusiast.",
     "download_cv": "Download CV",
@@ -19,5 +21,60 @@
     "institution": "CEFET-RJ",
     "degree": "Bachelor of Science in Computer Science",
     "graduationDate": "August 2026"
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cybersecurity_infrastructure": "Cybersecurity & Infrastructure",
+    "design_creativity": "Design & Creativity",
+    "description": "I have experience with the following technologies:"
+  },
+  "portfolio": {
+    "title": "Projects",
+    "projects": [
+      {
+        "title": "Byte de Sabor",
+        "description": "Byte de Sabor is a açai store website developed using React. It features a modern and responsive design, showcasing the store’s products and services. This project demonstrates my proficiency in front-end development and my ability to create visually appealing and user-friendly websites."
+      },
+      {
+        "title": "Archemy",
+        "description": "A Linux installation and configuration script tailored for Arch Linux. It supports package installation via Pacman, Paru, Yay, APT, DNF, or Flatpak with automatic package manager detection. Developed using Bash."
+      },
+      {
+        "title": "Capture the Flag [CTF]",
+        "description": "Dive into my journey in the world of Capture the Flag (CTF) challenges. This repository is a showcase of my practical learning experiences, featuring CTF challenges, writeups, and resources that I have tackled to enhance my cybersecurity skills. Each challenge represents a step forward in my quest to master the art of cybersecurity, showcasing my progress and the knowledge gained along the way."
+      },
+      {
+        "title": "PyBank",
+        "description": "PyBank is a Python-based banking system project showcasing my skills in developing robust financial applications. It features account management, transaction handling, and user authentication. This project demonstrates my proficiency in Python and my ability to create reliable, secure, and efficient software solutions."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "experiences": [
+      {
+        "company": "RNP",
+        "role": "Undergraduate Researcher",
+        "description": "Developed applications for Immersive TV and Virtual Reality in the TV 3.0 project with a focus on technological innovation.",
+        "duration": "June 2023 - September 2024"
+      }
+    ]
+  },
+  "contact": {
+    "title": "About Me",
+    "description": "Hi, I'm Paulo Macedo, a Computer Science student at CEFET-RJ, graduating in 2026. I'm passionate about cybersecurity, software development, and Linux systems.<br><br>I have hands-on experience with immersive technologies, scripting for Linux environments, and developing secure, scalable solutions. My skill set includes Python, Rust, C++, JavaScript, and tools like Unity, Git, and VMware.<br><br>Currently, I'm focused on advancing my knowledge in information security and building impactful projects.",
+    "projects": "Projects",
+    "years_of_experience": "years of experience",
+    "contact_message": "I'm open to new opportunities and collaborations, so feel free to reach out!",
+    "name_placeholder": "Your name ...",
+    "email_placeholder": "Your email ...",
+    "message_placeholder": "Your message ...",
+    "send_button": "Send"
+  },
+  "footer": {
+    "name": "Paule M",
+    "rights": "© 2025 Paule Macedo. All rights reserved."
   }
 }
