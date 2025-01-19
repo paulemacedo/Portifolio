@@ -29,7 +29,7 @@ import {
 const Hero = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const { t, i18n } = useTranslation();
-    
+
     const openModal = () => {
         setModalIsOpen(true);
       };
@@ -151,7 +151,7 @@ const Hero = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, delay: 2 }}
-                className='flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24'
+                className='flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24 gap-8'
             >
                 {/* <p className=" text-gray-200 mr-6">My Tech Stack</p> */}
                 <DiLinux className="text-purple-400" />
