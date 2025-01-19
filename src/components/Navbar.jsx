@@ -4,8 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import Logo from '../assets/logo.svg';
-import usFlag from '../assets/flags/USA.svg';
-import brFlag from '../assets/flags/BR.svg';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
  const [nav, setNav] = useState(false);
@@ -58,73 +57,14 @@ const Navbar = () => {
          <li><Link to='portfolio' smooth={true} offset={-50} duration={500}>{t('navbar.portfolio')}</Link></li>
          <li><Link to='experience' smooth={true} offset={-80} duration={500}>{t('navbar.experience')}</Link></li>
          <li><Link to='about' smooth={true} offset={-50} duration={500}>{t('navbar.contact')}</Link></li>
-         <li className='relative group'>
-           <div className='flex items-center gap-2 hover:text-white transition-colors duration-200 cursor-pointer'>
-             <img 
-               src={i18n.language === 'en' ? usFlag : brFlag} 
-               alt={i18n.language === 'en' ? 'EN' : 'PT-BR'} 
-               className='w-5 h-5 object-cover rounded-sm' 
-             />
-             {i18n.language === 'en' ? 'EN' : 'PT'}
-           </div>
-
-           <div className='invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute right-0 top-full mt-1 rounded-lg shadow-xl border border-purple-700 transition-all duration-200 min-w-[170px]'>
-             <div 
-               onClick={() => handleLanguageChange('en')} 
-               className='flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-purple-700 transition-colors duration-200 rounded-t-lg'
-             >
-               <img src={usFlag} alt="English" className='w-5 h-5 object-cover rounded-sm' /> 
-               English
-             </div>
-             <div 
-               onClick={() => handleLanguageChange('pt')} 
-               className='flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-purple-700 transition-colors duration-200 rounded-b-lg'
-             >
-               <img src={brFlag} alt="Português" className='w-5 h-5 object-cover rounded-sm' /> 
-               Portuguese
-             </div>
-           </div>
-         </li>
+         <li><LanguageSwitcher className="group" /></li>
        </ul>
-
        <div className='md:hidden flex items-center'>
-         <div className='mr-4 relative'>
-           <div 
-             className='flex items-center gap-2 hover:text-white transition-colors duration-200 cursor-pointer'
-             onClick={toggleLangDropdown}
-           >
-             <img 
-               src={i18n.language === 'en' ? usFlag : brFlag} 
-               alt={i18n.language === 'en' ? 'EN' : 'PT-BR'} 
-               className='w-5 h-5 object-cover rounded-sm' 
-             />
-             {i18n.language === 'en' ? 'EN' : 'PT'}
-           </div>
-
-           {langDropdown && (
-             <div className='absolute right-0 top-full mt-1 bg-gray-900 rounded-lg shadow-xl border border-purple-700 transition-all duration-200 min-w-[170px]'>
-               <div 
-                 onClick={() => handleLanguageChange('en')} 
-                 className='flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-purple-700 transition-colors duration-200 rounded-t-lg'
-               >
-                 <img src={usFlag} alt="English" className='w-5 h-5 object-cover rounded-sm' /> 
-                 English
-               </div>
-               <div 
-                 onClick={() => handleLanguageChange('pt')} 
-                 className='flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-purple-700 transition-colors duration-200 rounded-b-lg'
-               >
-                 <img src={brFlag} alt="Português" className='w-5 h-5 object-cover rounded-sm' /> 
-                 Portuguese
-               </div>
-             </div>
-           )}
-         </div>
+         <LanguageSwitcher className="mr-4" />
          <div onClick={toggleNav} className='z-50 text-gray-200'>
            {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
          </div>
        </div>
-
        <motion.div
          initial={false}
          animate={nav ? 'Open' : 'Closed'}
