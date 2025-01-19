@@ -28,8 +28,8 @@ import {
 
 const Hero = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const { t } = useTranslation();
-
+    const { t, i18n } = useTranslation();
+    
     const openModal = () => {
         setModalIsOpen(true);
       };
@@ -37,6 +37,15 @@ const Hero = () => {
       const closeModal = () => {
         setModalIsOpen(false);
       };
+
+
+    const animationTexts = [
+        t('hero.software_engineer'),
+        1000,
+        t('hero.cybersecurity'),
+        1000,
+    ];
+    
     return (
         <div className='mt-24 max-w-[1250px] mx-auto relative'>
             <div className='grid md:grid-cols-2 place-items-center gap-8 p-12'>
@@ -47,15 +56,11 @@ const Hero = () => {
                 transition={{ duration: 1 }}
                 >   
                 <TypeAnimation
-                    sequence={[                        
-                    t('hero.software_engineer'),
-                    1000,
-                    t('hero.cybersecurity'),
-                    1000
-                    ]}
+                    sequence={animationTexts} 
                     repeat={Infinity}
                     speed={50}
                     className="font-bold text-xl md:text-5xl text-gray-400 italic mb-4"
+                    key={i18n.language} // Atualiza a animação ao mudar idioma
                 />
 
                 <motion.p
