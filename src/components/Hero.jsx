@@ -59,8 +59,8 @@ const Hero = () => {
                     sequence={animationTexts} 
                     repeat={Infinity}
                     speed={50}
-                    className="font-bold text-xl md:text-5xl text-gray-400 italic mb-4"
-                    key={i18n.language} // Atualiza a animação ao mudar idioma
+                    className="font-bold text-xl md:text-3xl xl:text-4xl text-gray-400 italic mb-4"
+                    key={i18n.language}
                 />
 
                 <motion.p

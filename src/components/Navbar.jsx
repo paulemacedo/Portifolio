@@ -51,13 +51,13 @@ const Navbar = () => {
        <a href='#'>
          <img src={Logo} alt="logo" className='w-10 h-10' />
        </a>
-       <ul className='hidden md:flex z-10 cursor-pointer items-center gap-6 lg:gap-12'>
-         <li><Link to='education' smooth={true} offset={-80} duration={500}>{t('navbar.education')}</Link></li>
-         <li><Link to='skills' smooth={true} offset={-50} duration={500}>{t('navbar.skills')}</Link></li>
-         <li><Link to='portfolio' smooth={true} offset={-50} duration={500}>{t('navbar.portfolio')}</Link></li>
-         <li><Link to='experience' smooth={true} offset={-80} duration={500}>{t('navbar.experience')}</Link></li>
-         <li><Link to='about' smooth={true} offset={-50} duration={500}>{t('navbar.contact')}</Link></li>
-         <li><LanguageSwitcher className="group" /></li>
+       <ul className='hidden md:flex z-10 items-center gap-6 lg:gap-12'>
+         <li className='cursor-pointer'><Link to='education' smooth={true} offset={-80} duration={500}>{t('navbar.education')}</Link></li>
+         <li className='cursor-pointer'><Link to='skills' smooth={true} offset={-50} duration={500}>{t('navbar.skills')}</Link></li>
+         <li className='cursor-pointer'><Link to='portfolio' smooth={true} offset={-50} duration={500}>{t('navbar.portfolio')}</Link></li>
+         <li className='cursor-pointer'><Link to='experience' smooth={true} offset={-80} duration={500}>{t('navbar.experience')}</Link></li>
+         <li className='cursor-pointer'><Link to='about' smooth={true} offset={-50} duration={500}>{t('navbar.contact')}</Link></li>
+         <li className='cursor-pointer'><LanguageSwitcher className="group" /></li>
        </ul>
        <div className='md:hidden flex items-center'>
          <LanguageSwitcher className="mr-4" />

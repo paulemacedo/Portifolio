@@ -63,7 +63,8 @@
     ]
   },
   "contact": {
-    "title": "About Me",
+    "title": "About",
+    "title_2": " Me",
     "description": "Hi, I'm Paulo Macedo, a Computer Science student at CEFET-RJ, graduating in 2026. I'm passionate about cybersecurity, software development, and Linux systems.<br><br>I have hands-on experience with immersive technologies, scripting for Linux environments, and developing secure, scalable solutions. My skill set includes Python, Rust, C++, JavaScript, and tools like Unity, Git, and VMware.<br><br>Currently, I'm focused on advancing my knowledge in information security and building impactful projects.",
     "projects": "Projects",
     "years_of_experience": "years of experience",

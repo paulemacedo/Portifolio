@@ -2,6 +2,39 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import usFlag from '../assets/flags/USA.svg';
 import brFlag from '../assets/flags/BR.svg';
+import deFlag from '../assets/flags/DE.svg';
+import esFlag from '../assets/flags/ES.svg';
+
+const LANGUAGES = [
+  {
+    code: 'en',
+    name: 'English',
+    shortName: 'EN',
+    flag: usFlag,
+    alt: 'English'
+  },
+  {
+    code: 'pt', 
+    name: 'Portuguese',
+    shortName: 'PT',
+    flag: brFlag,
+    alt: 'Português'
+  },
+  // {
+  //   code: 'de',
+  //   name: 'German',
+  //   shortName: 'DE',
+  //   flag: deFlag,
+  //   alt: 'Deutsch'
+  // },
+  {
+    code: 'es',
+    name: 'Spanish',
+    shortName: 'ES',
+    flag: esFlag,
+    alt: 'Español'
+  }
+];
 
 const LanguageSwitcher = ({ className }) => {
   const { i18n } = useTranslation();
@@ -13,6 +46,8 @@ const LanguageSwitcher = ({ className }) => {
     setDropdownOpen(false);
   };
 
+  const currentLanguage = LANGUAGES.find(lang => lang.code === i18n.language) || LANGUAGES[0];
+
   return (
     <div className={`relative ${className}`}>
       <div
@@ -20,28 +55,26 @@ const LanguageSwitcher = ({ className }) => {
         onClick={toggleDropdown}
       >
         <img
-          src={i18n.language === 'en' ? usFlag : brFlag}
-          alt={i18n.language === 'en' ? 'EN' : 'PT-BR'}
+          src={currentLanguage.flag}
+          alt={currentLanguage.alt}
           className="w-5 h-5 object-cover rounded-sm"
         />
-        {i18n.language === 'en' ? 'EN' : 'PT'}
+        {currentLanguage.shortName}
       </div>
       {dropdownOpen && (
-        <div className="absolute right-0 top-full mt-1 bg-gray-900 rounded-lg shadow-xl border border-purple-700 transition-all duration-200 min-w-[170px]">
-          <div
-            onClick={() => handleLanguageChange('en')}
-            className="flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-purple-700 transition-colors duration-200 rounded-t-lg"
-          >
-            <img src={usFlag} alt="English" className="w-5 h-5 object-cover rounded-sm" />
-            English
-          </div>
-          <div
-            onClick={() => handleLanguageChange('pt')}
-            className="flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-purple-700 transition-colors duration-200 rounded-b-lg"
-          >
-            <img src={brFlag} alt="Português" className="w-5 h-5 object-cover rounded-sm" />
-            Portuguese
-          </div>
+        <div className="absolute right-0 top-full mt-1 bg-gray-900 rounded-lg shadow-xl border-2 border-purple-700 transition-all duration-200 min-w-[170px]">
+          {LANGUAGES.map((language, index) => (
+            <div
+              key={language.code}
+              onClick={() => handleLanguageChange(language.code)}
+              className={`flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-purple-700 transition-colors duration-200 ${
+                index === 0 ? 'rounded-t-lg' : 'rounded-b-lg'
+              }`}
+            >
+              <img src={language.flag} alt={language.alt} className="w-5 h-5 object-cover rounded-sm" />
+              {language.name}
+            </div>
+          ))}
         </div>
       )}
     </div>

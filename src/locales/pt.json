@@ -1,6 +1,6 @@
 {
   "hero": {
-    "software_engineer": "Fullstack dev",
+    "software_engineer": "Desenvolvedor Fullstack",
     "cybersecurity": "Cibersegurança",
     "greeting": "OLÁ, EU SOU",
     "description": "Sou um desenvolvedor full stack baseado no Brasil. Tenho paixão por criar e desenvolver aplicações web. Também sou entusiasta de cibersegurança.",
@@ -63,7 +63,8 @@
     ]
   },
   "contact": {
-    "title": "Sobre Mim",
+    "title": "Sobre",
+    "title_2": " Mim",
     "description": "Olá, eu sou Paulo Macedo, estudante de Ciência da Computação no CEFET-RJ, com graduação prevista para 2026. Sou apaixonado por cibersegurança, desenvolvimento de software e sistemas Linux.<br><br>Tenho experiência prática com tecnologias imersivas, scripts para ambientes Linux e desenvolvimento de soluções seguras e escaláveis. Meu conjunto de habilidades inclui Python, Rust, C++, JavaScript e ferramentas como Unity, Git e VMware.<br><br>Atualmente, estou focado em avançar meu conhecimento em segurança da informação e construir projetos impactantes.",
     "projects": "Projetos",
     "years_of_experience": "anos de experiência",

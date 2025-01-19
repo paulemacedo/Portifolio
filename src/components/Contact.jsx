@@ -14,7 +14,7 @@ const Contact = () => {
                     <div>
                         <div className='text-gray-300 my-3'>
                             <h3 className='text-4x1 font-semibold mb-5'>
-                                {t('contact.title')}
+                            {t('contact.title')}<span>{t('contact.title_2')}</span>
                             </h3>
                             <p className='text-justify leading-7 w-11/12 mx-auto' dangerouslySetInnerHTML={{ __html: t('contact.description') }}>
                             </p>
