@@ -52,7 +52,7 @@ const Navbar = () => {
        <a href='#'>
          <img src={Logo} alt="logo" className='w-10 h-10' />
        </a>
-       <ul className='hidden md:flex gap-12 z-10 cursor-pointer items-center'>
+       <ul className='hidden md:flex z-10 cursor-pointer items-center gap-6 lg:gap-12'>
          <li><Link to='education' smooth={true} offset={-80} duration={500}>{t('navbar.education')}</Link></li>
          <li><Link to='skills' smooth={true} offset={-50} duration={500}>{t('navbar.skills')}</Link></li>
          <li><Link to='portfolio' smooth={true} offset={-50} duration={500}>{t('navbar.portfolio')}</Link></li>
