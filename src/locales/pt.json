@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "software_engineer": "Fullstack dev",
+    "cybersecurity": "Cibersegurança",
+    "greeting": "OLÁ, EU SOU",
+    "description": "Sou um desenvolvedor full stack baseado no Brasil. Tenho paixão por criar e desenvolver aplicações web. Também sou entusiasta de cibersegurança.",
+    "download_cv": "Baixar CV",
+    "select_cv_language": "Selecione o idioma",
+    "brazilian_portuguese": "Português Brasileiro",
+    "english": "Inglês"
+  },
+  "navbar": {
+    "education": "Educação",
+    "skills": "Habilidades",
+    "portfolio": "Projetos",
+    "experience": "Experiência",
+    "contact": "Contato"
+  },
+  "education": {
+    "title": "Educação",
+    "institution": "CEFET-RJ",
+    "degree": "Bacharel em Ciência da Computação",
+    "graduationDate": "Agosto 2026"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cybersecurity_infrastructure": "Cibersegurança & Infraestrutura",
+    "design_creativity": "Design & Criatividade",
+    "description": "Tenho experiência com as seguintes tecnologias:"
+  },
+  "portfolio": {
+    "title": "Projetos",
+    "projects": [
+      {
+        "title": "Byte de Sabor",
+        "description": "Byte de Sabor é um site de loja de açaí desenvolvido usando React. Ele apresenta um design moderno e responsivo, exibindo os produtos e serviços da loja. Este projeto demonstra minha proficiência em desenvolvimento front-end e minha capacidade de criar sites visualmente atraentes e fáceis de usar."
+      },
+      {
+        "title": "Archemy",
+        "description": "Um script de instalação e configuração do Linux personalizado para Arch Linux. Ele suporta a instalação de pacotes via Pacman, Paru, Yay, APT, DNF ou Flatpak com detecção automática do gerenciador de pacotes. Desenvolvido usando Bash."
+      },
+      {
+        "title": "Capture the Flag [CTF]",
+        "description": "Mergulhe na minha jornada no mundo dos desafios Capture the Flag (CTF). Este repositório é uma vitrine das minhas experiências práticas de aprendizado, apresentando desafios CTF, writeups e recursos que enfrentei para aprimorar minhas habilidades em cibersegurança. Cada desafio representa um passo à frente na minha busca para dominar a arte da cibersegurança, mostrando meu progresso e o conhecimento adquirido ao longo do caminho."
+      },
+      {
+        "title": "PyBank",
+        "description": "PyBank é um projeto de sistema bancário baseado em Python que demonstra minhas habilidades no desenvolvimento de aplicações financeiras robustas. Ele apresenta gerenciamento de contas, manipulação de transações e autenticação de usuários. Este projeto demonstra minha proficiência em Python e minha capacidade de criar soluções de software confiáveis, seguras e eficientes."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiência",
+    "experiences": [
+      {
+        "company": "RNP",
+        "role": "Pesquisador de Graduação",
+        "description": "Desenvolveu aplicações para TV Imersiva e Realidade Virtual no projeto TV 3.0 com foco em inovação tecnológica.",
+        "duration": "Junho 2023 - Setembro 2024"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Sobre Mim",
+    "description": "Olá, eu sou Paulo Macedo, estudante de Ciência da Computação no CEFET-RJ, com graduação prevista para 2026. Sou apaixonado por cibersegurança, desenvolvimento de software e sistemas Linux.<br><br>Tenho experiência prática com tecnologias imersivas, scripts para ambientes Linux e desenvolvimento de soluções seguras e escaláveis. Meu conjunto de habilidades inclui Python, Rust, C++, JavaScript e ferramentas como Unity, Git e VMware.<br><br>Atualmente, estou focado em avançar meu conhecimento em segurança da informação e construir projetos impactantes.",
+    "projects": "Projetos",
+    "years_of_experience": "anos de experiência",
+    "contact_message": "Estou aberto a novas oportunidades e colaborações, então sinta-se à vontade para entrar em contato!",
+    "name_placeholder": "Seu nome ...",
+    "email_placeholder": "Seu email ...",
+    "message_placeholder": "Sua mensagem ...",
+    "send_button": "Enviar"
+  },
+  "footer": {
+    "name": "Paule M",
+    "rights": "© 2025 Paule Macedo. Todos os direitos reservados."
+  }
+}
