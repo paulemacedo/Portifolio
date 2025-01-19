@@ -1,5 +1,6 @@
-
-<h1 align="center">Paule's Portfolio</h1>
+<h1 align="center">
+  <img src="/public/icon.svg" alt="Portfolio Icon" />
+</h1>
 <p align="center">This is my personal portfolio, where I showcase my projects and skills.</p>
 <p align="center">
   <img src="https://img.shields.io/badge/vite-%23432E54.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
