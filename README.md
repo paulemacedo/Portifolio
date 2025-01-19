@@ -1,5 +1,6 @@
+
 <h1 align="center">Paule's Portfolio</h1>
-<p align="center">This is my personal portfolio, where I show my projects and my skills.</p>
+<p align="center">This is my personal portfolio, where I showcase my projects and skills.</p>
 <p align="center">
   <img src="https://img.shields.io/badge/vite-%23432E54.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/React-432E54?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
@@ -12,3 +13,19 @@
   <img src="https://img.shields.io/badge/Made%20by-Paule-432E54.svg" alt="Made by" />
   <img src="https://img.shields.io/badge/Made%20with%20-❤️-432E54.svg" alt="Love" />
 </div>
+
+
+## 📋 About
+This is my personal portfolio, where I showcase my projects and skills. I made it using React, Vite, and Tailwind CSS.
+
+Check it out at [paulemacedo.vercel.app](http://paulemacedo.vercel.app).
+## 🚀 Technologies
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## 📸 Screenshots
+<p align="center">
+  <img src="/public/og-image.png" alt="Portfolio Screenshot" />
+</p>
