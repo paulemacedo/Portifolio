@@ -114,7 +114,7 @@ const Hero = () => {
                         >    
                         {t('hero.brazilian_portuguese')}
                         </button>
-                        <button onClick={() => window.location.href = '/CV'}>
+                        <button onClick={() => window.location.href = '/CV.pdf'}>
                         {t('hero.english')}
                         </button>
                     </div>
