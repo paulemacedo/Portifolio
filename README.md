@@ -7,9 +7,7 @@
 </p>
 
 <div align="center">
-    <a href="http://paulemacedo.vercel.app">
-        <img src="https://img.shields.io/website-up-down-432E54-red/http/paulemacedo.vercel.app.svg" alt="Site Status" />
-    </a>
+  <a href="http://paulemacedo.vercel.app"><img src="https://img.shields.io/website-up-down-432E54-red/http/paulemacedo.vercel.app.svg" alt="Site Status" /></a>
   <img src="https://img.shields.io/github/stars/paulemacedo/portifolio?style=flat&color=432E54" alt="GitHub Repo stars" />
   <img src="https://img.shields.io/badge/Made%20by-Paule-432E54.svg" alt="Made by" />
   <img src="https://img.shields.io/badge/Made%20with%20-❤️-432E54.svg" alt="Love" />
