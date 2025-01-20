@@ -49,7 +49,7 @@ const Navbar = () => {
    <div className='fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50'>
      <div className='max-w-[1300px] mx-auto flex justify-between text-gray-200 text-xl items-center px-12 h-20'>
        <a href='#'>
-         <img src={Logo} alt="logo" className='w-10 h-10' />
+         <img src={Logo} alt="logo" className='w-14 h-14' />
        </a>
        <ul className='hidden md:flex z-10 items-center gap-6 lg:gap-12'>
          <li className='cursor-pointer'><Link to='education' smooth={true} offset={-80} duration={500}>{t('navbar.education')}</Link></li>

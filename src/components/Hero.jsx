@@ -55,6 +55,7 @@ const Hero = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
                 >   
+
                 <TypeAnimation
                     sequence={animationTexts} 
                     repeat={Infinity}
@@ -145,7 +146,7 @@ const Hero = () => {
                 className="w-[300px] md:w-[450px]"
                 />
             </div>
-
+  
             <motion.div 
                 initial={{ opacity: 0}}
                 whileInView={{ opacity: 1 }}
@@ -161,9 +162,6 @@ const Hero = () => {
                 <DiHtml5 className="text-purple-400" />
                 <DiCss3 className="text-purple-400" />
                 <DiJavascript className="text-purple-400" />
-
-
-                
             </motion.div>
 
             <div className="absolute inset-0 hidden md:block">

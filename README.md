@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="http://paulemacedo.vercel.app"><img src="/src/assets/logo.svg" alt="Portfolio Icon" width="100" height="100" /></a>
+  <a href="http://paulemacedo.vercel.app"><img src="src/assets/logo.svg" alt="Portfolio Icon" width="100" height="100" /></a>
   <p>This is my personal portfolio, where I showcase my projects and skills.</p>
   <div>
     <img src="https://img.shields.io/badge/vite-%23432E54.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
