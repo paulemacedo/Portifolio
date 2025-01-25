@@ -71,7 +71,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className='max-w-[650px] mx-auto flex flex-col justify-center px-4 text-gray-200 pb-8 md:py-12' id='skills'>
+        <div className='max-w-[650px] mx-auto flex flex-col items-center px-4 text-gray-200 pb-8 md:py-12' id='skills'>
             <Reveal>
                 <h2 className='text-3xl font-bold mb-4 text-center'>
                     {t('skills.title')}
@@ -80,11 +80,11 @@ const Skills = () => {
                     {t('skills.description')}
                 </p>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 '>
                     {skills.map((skill, index) => (
                         <div key={index} className='border border-purple-900 p-6 rounded-lg bg-purple-900/2 shadow-lg'>
                             <h3 className="text-xl font-bold mb-4 text-center">{skill.category}</h3>
-                            <div className='grid grid-cols-2 gap-4'>
+                            <div className='grid grid-cols-2 gap-8'>
                                 {skill.technologies.map((tech, idx) => (
                                     <div key={idx} className='flex items-center space-x-2' >
                                         <span className='text-2xl'>{tech.icon}</span>
