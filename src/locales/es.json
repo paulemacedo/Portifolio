@@ -39,15 +39,15 @@
       },
       {
         "title": "Archemy",
-        "description": "Un script de instalación y configuración de Linux adaptado para Arch Linux. Admite la instalación de paquetes a través de Pacman, Paru, Yay, APT, DNF o Flatpak con detección automática del gestor de paquetes. Desarrollado usando Bash."
+        "description": "Un script de instalación y configuración de Linux personalizado para Arch Linux, con soporte a múltiples distribuciones y detección automática de paquetes."
       },
       {
         "title": "Capture the Flag [CTF]",
-        "description": "Sumérgete en mi viaje por el mundo de los desafíos Capture the Flag (CTF). Este repositorio es una muestra de mis experiencias de aprendizaje práctico, con desafíos CTF, writeups y recursos que he abordado para mejorar mis habilidades en ciberseguridad. Cada desafío representa un paso adelante en mi búsqueda por dominar el arte de la ciberseguridad, mostrando mi progreso y el conocimiento adquirido en el camino."
+        "description": "Un repositorio con desafíos CTF que enfrenté para mejorar mis habilidades en ciberseguridad en plataformas como TryHackMe, Hack The Box, Let's Defend o en un laboratorio personal."
       },
       {
         "title": "PyBank",
-        "description": "PyBank es un proyecto de sistema bancario basado en Python que muestra mis habilidades en el desarrollo de aplicaciones financieras robustas. Cuenta con gestión de cuentas, manejo de transacciones y autenticación de usuarios. Este proyecto demuestra mi competencia en Python y mi capacidad para crear soluciones de software confiables, seguras y eficientes."
+        "description": "PyBank es un sistema bancario basado en Python con gestión de cuentas, manejo de transacciones y autenticación de usuarios."
       }
     ]
   },
@@ -70,7 +70,7 @@
   "contact": {
     "title": "Sobre",
     "title_2": " Mí",
-    "description": "Hola, soy Paule Macedo, estudiante de Ciencias de la Computación en CEFET-RJ, me graduaré en 2026. Me apasiona la ciberseguridad, el desarrollo de software y los sistemas Linux.<br><br>Tengo experiencia práctica con tecnologías inmersivas, scripting para entornos Linux y desarrollo de soluciones seguras y escalables. Mi conjunto de habilidades incluye Python, Rust, C++, JavaScript y herramientas como Unity, Git y VMware.<br><br>Actualmente, estoy enfocado en avanzar mi conocimiento en seguridad de la información y construir proyectos impactantes.",
+    "description": "Hola, soy Paule Macedo, estudiante de Ciencias de la Computación en CEFET-RJ, me graduaré en 2026. Apasionado por la ciberseguridad, el desarrollo de software y los sistemas Linux.<br><br>Tengo experiencia práctica con tecnologías inmersivas, scripting para entornos Linux y desarrollo de soluciones seguras y escalables. Mi conjunto de habilidades incluye Python, Bash, ReactJS y herramientas como Unity, Git y VMware.<br><br>Actualmente, estoy enfocado en avanzar mi conocimiento en seguridad de la información y construir proyectos impactantes.",
     "projects": "Proyectos",
     "years_of_experience": "años de experiencia",
     "contact_message": "Estoy abierto a nuevas oportunidades y colaboraciones, ¡así que no dudes en contactarme!",

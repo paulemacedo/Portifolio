@@ -39,15 +39,15 @@
       },
       {
         "title": "Archemy",
-        "description": "A Linux installation and configuration script tailored for Arch Linux. It supports package installation via Pacman, Paru, Yay, APT, DNF, or Flatpak with automatic package manager detection. Developed using Bash."
+        "description": "A Linux installation and configuration script tailored for Arch Linux, with support for multiple distributions and automatic package detection."
       },
       {
         "title": "Capture the Flag [CTF]",
-        "description": "Dive into my journey in the world of Capture the Flag (CTF) challenges. This repository is a showcase of my practical learning experiences, featuring CTF challenges, writeups, and resources that I have tackled to enhance my cybersecurity skills. Each challenge represents a step forward in my quest to master the art of cybersecurity, showcasing my progress and the knowledge gained along the way."
+        "description": "A repository with CTF challenges I faced to improve my cybersecurity skills on platforms like TryHackMe, Hack The Box, Let's Defend, or in a personal lab."
       },
       {
         "title": "PyBank",
-        "description": "PyBank is a Python-based banking system project showcasing my skills in developing robust financial applications. It features account management, transaction handling, and user authentication. This project demonstrates my proficiency in Python and my ability to create reliable, secure, and efficient software solutions."
+        "description": "PyBank is a Python-based banking system with account management, transaction handling, and user authentication."
       }
     ]
   },
@@ -70,7 +70,7 @@
   "contact": {
     "title": "About",
     "title_2": " Me",
-    "description": "Hi, I'm Paule Macedo, a Computer Science student at CEFET-RJ, graduating in 2026. I'm passionate about cybersecurity, software development, and Linux systems.<br><br>I have hands-on experience with immersive technologies, scripting for Linux environments, and developing secure, scalable solutions. My skill set includes Python, Rust, C++, JavaScript, and tools like Unity, Git, and VMware.<br><br>Currently, I'm focused on advancing my knowledge in information security and building impactful projects.",
+    "description": "Hi, I'm Paule Macedo, a Computer Science student at CEFET-RJ, graduating in 2026. Passionate about cybersecurity, software development, and Linux systems.<br><br>With hands-on experience in immersive technologies, scripting for Linux environments, and developing secure, scalable solutions. My skill set includes Python, Bash, ReactJS, and tools like Unity, Git, and VMware.<br><br>Currently focused on advancing knowledge in cybersecurity and building impactful projects.",
     "projects": "Projects",
     "years_of_experience": "years of experience",
     "contact_message": "I'm open to new opportunities and collaborations, so feel free to reach out!",
