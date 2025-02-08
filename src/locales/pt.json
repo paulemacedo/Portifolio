@@ -56,9 +56,14 @@
     "experiences": [
       {
         "company": "RNP",
-        "role": "Pesquisador de Graduação",
-        "description": "Desenvolveu aplicações para TV Imersiva e Realidade Virtual no projeto TV 3.0 com foco em inovação tecnológica.",
-        "duration": "Junho 2023 - Setembro 2024"
+        "role": "Iniciação Científica",
+        "location": "Remoto | Rio de Janeiro, RJ",
+        "duration": "Junho 2023 - Setembro 2024",
+        "description": [
+          "<strong>Universalizei</strong> a seleção de portas de rede no middleware Ginga para suportar <strong>Windows/Linux</strong> (além de <strong>macOS</strong>), eliminando dependências específicas de hardware. Impacto: Permitiu demonstrações de projetos em mais de <strong>4 feiras nacionais de tecnologia</strong> e expandiu a compatibilidade para diversos ambientes.",
+          "<strong>Desenvolvi</strong> templates de perfil de usuário para <strong>TV Imersiva (HTML/CSS/JavaScript)</strong> e <strong>Realidade Virtual (Unity/C#)</strong>, implantados em mais de <strong>4 eventos nacionais</strong>. Impacto: Otimizou a interação para mais de <strong>200 visitantes</strong> e aumentou o engajamento dos usuários durante demonstrações ao vivo.",
+          "<strong>Configurei</strong> dual-boot (<strong>Ubuntu/Windows</strong>) em mais de <strong>3 laptops de projeto</strong> e <strong>validei</strong> a comunicação middleware-dispositivo via <strong>Insomnia API</strong>. Impacto: Reduziu falhas críticas em <strong>60%</strong> durante demonstrações de alto risco."
+        ]
       }
     ]
   },

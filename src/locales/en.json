@@ -57,8 +57,13 @@
       {
         "company": "RNP",
         "role": "Undergraduate Researcher",
-        "description": "Developed applications for Immersive TV and Virtual Reality in the TV 3.0 project with a focus on technological innovation.",
-        "duration": "June 2023 - September 2024"
+        "location": "Remote | Rio de Janeiro, RJ",
+        "duration": "June 2023 - September 2024",
+        "description": [
+          "<strong>Universalized</strong> network port selection in the middleware Ginga to support <strong>Windows/Linux</strong> (in addition to <strong>macOS</strong>), eliminating hardware-specific dependencies. Impact: Enabled project demonstrations at more than <strong>4 national tech fairs</strong> and expanded compatibility for diverse environments.",
+          "<strong>Developed</strong> user profile templates for <strong>Immersive TV (HTML/CSS/JavaScript)</strong> and <strong>Virtual Reality (Unity/C#)</strong>, deployed at more than <strong>4 national events</strong>. Impact: Streamlined interaction for more than <strong>200 visitors</strong> and enhanced user engagement during live demos.",
+          "<strong>Configured</strong> dual-boot (<strong>Ubuntu/Windows</strong>) on more than <strong>3 project laptops</strong> and <strong>validated</strong> middleware-device communication via <strong>Insomnia API</strong>. Impact: Reduced critical failures by <strong>60%</strong> during high-stakes demonstrations."
+        ]
       }
     ]
   },
