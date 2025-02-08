@@ -3,7 +3,7 @@
     "software_engineer": "Fullstack dev",
     "cybersecurity": "Cybersecurity",
     "greeting": "HEY, I'M",
-    "description": "I'm a full stack developer based in Brazil. I have a passion for creating and developing web applications. I'm also a cybersecurity enthusiast.",
+    "description": "I'm a full stack developer based in Brazil with a passion for Linux and cybersecurity, and also enjoy developing web applications.",
     "download_cv": "Download CV",
     "select_cv_language": "Select language",
     "brazilian_portuguese": "Brazilian Portuguese",
@@ -26,7 +26,7 @@
     "title": "Skills",
     "frontend": "Frontend",
     "backend": "Backend",
-    "cybersecurity_infrastructure": "Cybersecurity & Infrastructure",
+    "cybersecurity": "Cybersecurity",
     "design_creativity": "Design & Creativity",
     "description": "I have experience with the following technologies:"
   },

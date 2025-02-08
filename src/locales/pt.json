@@ -3,7 +3,7 @@
     "software_engineer": "Desenvolvedor Fullstack",
     "cybersecurity": "Cibersegurança",
     "greeting": "OLÁ, EU SOU",
-    "description": "Sou um desenvolvedor full stack baseado no Brasil. Tenho paixão por criar e desenvolver aplicações web. Também sou entusiasta de cibersegurança.",
+    "description": "Sou um desenvolvedor full stack baseado no Brasil com paixão por Linux e cibersegurança, e também gosto de desenvolver aplicações web.",
     "download_cv": "Baixar CV",
     "select_cv_language": "Selecione o idioma",
     "brazilian_portuguese": "Português Brasileiro",
@@ -26,7 +26,7 @@
     "title": "Habilidades",
     "frontend": "Frontend",
     "backend": "Backend",
-    "cybersecurity_infrastructure": "Cibersegurança & Infraestrutura",
+    "cybersecurity": "Cibersegurança & Infraestrutura",
     "design_creativity": "Design & Criatividade",
     "description": "Tenho experiência com as seguintes tecnologias:"
   },

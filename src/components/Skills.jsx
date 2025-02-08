@@ -1,7 +1,7 @@
 import React from "react";
 import Reveal from "./Reveal";
 import { useTranslation } from 'react-i18next';
-
+import { FcLinux } from "react-icons/fc";
 import { 
     DiCss3,
     DiHtml5,
@@ -10,10 +10,8 @@ import {
     DiGithubBadge,
     DiPython,
     DiRust,
-    DiLinux,
     DiUnitySmall,
 } from "react-icons/di";
-
 import { 
     SiWireshark,
     SiKalilinux,
@@ -21,8 +19,10 @@ import {
     SiBurpsuite,
     SiGnubash,
     SiFigma,
+    SiGimp,
     SiDavinciresolve,
     SiCplusplus,
+    SiMongodb
 } from "react-icons/si";
 
 
@@ -33,6 +33,24 @@ const Skills = () => {
 
     const skills = [
         {
+            category: t('skills.cybersecurity'),
+            technologies: [
+                { name: 'Linux', icon: <FcLinux /> },
+                { name: 'Burp Suite', icon: <SiBurpsuite className="text-white" /> },
+                { name: 'Wireshark', icon: <SiWireshark className="text-blue-500" /> },
+                { name: 'Kali', icon: <SiKalilinux className="text-blue-500" /> },            
+            ],
+        },
+        {
+            category: t('skills.backend'),
+            technologies: [
+                { name: 'Python', icon: <DiPython className="text-blue-500" /> },
+                { name: 'Rust', icon: <DiRust className="text-orange-500" /> },
+                { name: 'Bash', icon: <SiGnubash className="text-white" /> },
+                { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
+            ],
+        },
+        {
             category: t('skills.frontend'),
             technologies: [
                 { name: 'HTML5', icon: <DiHtml5 className="text-orange-600" /> },
@@ -42,36 +60,18 @@ const Skills = () => {
             ],
         },
         {
-            category: t('skills.backend'),
-            technologies: [
-                { name: 'Python', icon: <DiPython className="text-blue-500" /> },
-                { name: 'Rust', icon: <DiRust className="text-orange-500" /> },
-                { name: 'C++', icon: <SiCplusplus className="text-blue-500" /> },
-            ],
-        },
-        {
-            category: t('skills.cybersecurity_infrastructure'),
-            technologies: [
-                { name: 'GitHub', icon: <DiGithubBadge className="text-white" /> },
-                { name: 'Linux', icon: <DiLinux className="text-white" /> },
-                { name: 'Bash', icon: <SiGnubash className="text-white" /> },
-                { name: 'Wireshark', icon: <SiWireshark className="text-blue-500" /> },
-                { name: 'Kali', icon: <SiKalilinux className="text-blue-500" /> },
-    
-            ],
-        },
-        {
             category: t('skills.design_creativity'),
             technologies: [
-                { name: 'Unity', icon: <DiUnitySmall className="text-gray-500" /> },
-                { name: 'DaVinci', icon: <SiDavinciresolve className="text-white" /> },
                 { name: 'Figma', icon: <SiFigma className="text-white" /> },
+                { name: 'DaVinci', icon: <SiDavinciresolve className="text-white" /> },
+                { name: 'Unity', icon: <DiUnitySmall className="text-white" /> },
+                { name: 'GIMP', icon: <SiGimp className="text-white" /> },
             ],
         },
     ];
 
     return (
-        <div className='max-w-[650px] mx-auto flex flex-col items-center px-4 text-gray-200 pb-8 md:py-12' id='skills'>
+        <div className='max-w-[950px] mx-auto flex flex-col items-center px-4 text-gray-200 pb-8 md:py-12' id='skills'>
             <Reveal>
                 <h2 className='text-3xl font-bold mb-4 text-center'>
                     {t('skills.title')}
