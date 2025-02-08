@@ -40,7 +40,6 @@ const Skills = () => {
             technologies: [
                 { name: 'Linux', icon: <FcLinux /> },
                 { name: 'Kali', icon: <SiKalilinux className="text-blue-500" /> },            
-
                 { name: 'Burp Suite', icon: <SiBurpsuite className="text-white" /> },
                 { name: 'Wireshark', icon: <SiWireshark className="text-blue-500" /> },
             ],
