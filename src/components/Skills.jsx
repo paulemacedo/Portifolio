@@ -10,6 +10,7 @@ import {
     DiGithubBadge,
     DiPython,
     DiRust,
+    DiNodejsSmall,
     DiUnitySmall,
 } from "react-icons/di";
 import { 
@@ -19,10 +20,12 @@ import {
     SiBurpsuite,
     SiGnubash,
     SiFigma,
+    SiRedux,
     SiGimp,
     SiDavinciresolve,
     SiCplusplus,
-    SiMongodb
+    SiMongodb,
+    SiFastapi,
 } from "react-icons/si";
 
 
@@ -36,18 +39,25 @@ const Skills = () => {
             category: t('skills.cybersecurity'),
             technologies: [
                 { name: 'Linux', icon: <FcLinux /> },
+                { name: 'Kali', icon: <SiKalilinux className="text-blue-500" /> },            
+
                 { name: 'Burp Suite', icon: <SiBurpsuite className="text-white" /> },
                 { name: 'Wireshark', icon: <SiWireshark className="text-blue-500" /> },
-                { name: 'Kali', icon: <SiKalilinux className="text-blue-500" /> },            
             ],
         },
         {
             category: t('skills.backend'),
             technologies: [
                 { name: 'Python', icon: <DiPython className="text-blue-500" /> },
-                { name: 'Rust', icon: <DiRust className="text-orange-500" /> },
                 { name: 'Bash', icon: <SiGnubash className="text-white" /> },
                 { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
+                { name: 'Node.js', icon: <DiNodejsSmall className="text-green-500" /> },
+
+  
+                // { name: 'Rust', icon: <DiRust className="text-orange-500" /> },
+                // { name: 'FastAPI', icon: <SiFastapi className="text-white" /> },
+                // { name: 'C++', icon: <SiCplusplus className="text-blue-500" /> },
+                // { name: 'GitHub', icon: <DiGithubBadge className="text-white" /> },
             ],
         },
         {
@@ -57,6 +67,10 @@ const Skills = () => {
                 { name: 'CSS3', icon: <DiCss3 className="text-blue-600" /> },
                 { name: 'JavaScript', icon: <DiJavascript className="text-yellow-500" /> },
                 { name: 'React', icon: <DiReact className="text-blue-500" /> },
+
+                // { name: 'Tailwind', icon: <SiTailwindcss className="text-blue-500" /> },
+                // { name: 'Redux', icon: <SiRedux className="text-purple-500" /> },
+
             ],
         },
         {
