@@ -190,7 +190,7 @@ const Hero = () => {
         </motion.div>
       )}
     <div className="max-w-[1000px] mx-auto relative pt-24">
-      <div className="grid md:grid-cols-2 place-items-center gap-8 p-12">
+    <div className="flex flex-col-reverse md:grid md:grid-cols-2 place-items-center gap-8 p-12">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
