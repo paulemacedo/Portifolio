@@ -294,7 +294,7 @@ const Hero = () => {
                 <SiTryhackme />
               </motion.a>
 
-              {/* <motion.div
+              <motion.div
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={toggleAudio}
@@ -302,7 +302,7 @@ const Hero = () => {
                 style={{ pointerEvents: 'auto' }}
               >
                 {isPlaying ? <AiOutlinePause /> : <AiOutlineSound />}
-              </motion.div> */}
+              </motion.div>
             </div>
           </motion.div>
         </motion.div>
