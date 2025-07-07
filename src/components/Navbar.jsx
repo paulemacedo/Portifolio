@@ -16,15 +16,20 @@ const Navbar = () => {
   const [langDropdown, setLangDropdown] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const { t, i18n } = useTranslation();
-  const audioRef = useRef(null);
+const audioRef = useRef(new Audio('/Crescent-Moon-chosic.com.mp3'));
 
   useEffect(() => {
-    audioRef.current = new Audio('/Crescent-Moon-chosic.com.mp3');
     audioRef.current.loop = true;
 
     audioRef.current.play()
-      .then(() => setIsPlaying(true))
-      .catch(err => console.log('autoplay failed:', err));
+      .then(() => {
+        console.log('Autoplay funcionou');
+        setIsPlaying(true);
+      })
+      .catch(err => {
+        console.log('Autoplay bloqueado:', err);
+        setIsPlaying(false);
+      });
   }, []);
 
   const toggleNav = () => setNav(!nav);
@@ -41,10 +46,11 @@ const Navbar = () => {
 
     if (isPlaying) {
       audioRef.current.pause();
+      setIsPlaying(false);
     } else {
-      audioRef.current.play().catch(err => console.log('autoplay failed:', err));
+      audioRef.current.play().catch(err => console.log('Erro ao tentar tocar:', err));
+      setIsPlaying(true);
     }
-    setIsPlaying(!isPlaying);
   };
 
   const menuVariants = {
