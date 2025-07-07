@@ -1,63 +1,26 @@
 import { 
   AiOutlineMenu,
   AiOutlineClose,
-  AiOutlineSound,
-  AiOutlinePause,
 } from 'react-icons/ai';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import Logo from '../assets/logo.svg';
 import LanguageSwitcher from './LanguageSwitcher';
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [langDropdown, setLangDropdown] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const { t, i18n } = useTranslation();
-const audioRef = useRef(new Audio('/Crescent-Moon-chosic.com.mp3'));
-
-  useEffect(() => {
-    audioRef.current.loop = true;
-
-    audioRef.current.play()
-      .then(() => {
-        console.log('Autoplay funcionou');
-        setIsPlaying(true);
-      })
-      .catch(err => {
-        console.log('Autoplay bloqueado:', err);
-        setIsPlaying(false);
-      });
-  }, []);
+  const { t } = useTranslation();
 
   const toggleNav = () => setNav(!nav);
   const closeNav = () => setNav(false);
-  const toggleLangDropdown = () => setLangDropdown(!langDropdown);
-  
-  const handleLanguageChange = (lng) => {
-    i18n.changeLanguage(lng);
-    setLangDropdown(false);
-  };
-
-  const toggleAudio = () => {
-    if (!audioRef.current) return;
-
-    if (isPlaying) {
-      audioRef.current.pause();
-      setIsPlaying(false);
-    } else {
-      audioRef.current.play().catch(err => console.log('Erro ao tentar tocar:', err));
-      setIsPlaying(true);
-    }
-  };
 
   const menuVariants = {
     Open: { x: 0, transition: { stiffness: 20, damping: 15 } },
     Closed: { x: '-100%', transition: { stiffness: 20, damping: 15 } },
   };
-
   return (
     <div className='fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50 py-4'>
       <div className='max-w-[1300px] mx-auto flex justify-between text-gray-200 text-xl items-center px-12 h-10'>
@@ -69,11 +32,7 @@ const audioRef = useRef(new Audio('/Crescent-Moon-chosic.com.mp3'));
           <li className='cursor-pointer'><Link to='skills' smooth={true} offset={-50} duration={500}>{t('navbar.skills')}</Link></li>
           <li className='cursor-pointer'><Link to='portfolio' smooth={true} offset={-50} duration={500}>{t('navbar.portfolio')}</Link></li>
           <li className='cursor-pointer'><Link to='experience' smooth={true} offset={-80} duration={500}>{t('navbar.experience')}</Link></li>
-          <li className='cursor-pointer'><Link to='about' smooth={true} offset={-50} duration={500}>{t('navbar.contact')}</Link></li>
-          <li className='cursor-pointer'><LanguageSwitcher className="group" /></li>
-          <li className='cursor-pointer' onClick={toggleAudio}>
-            {isPlaying ? <AiOutlinePause size={24} /> : <AiOutlineSound size={24} />}
-          </li>
+          <li className='cursor-pointer'><Link to='about' smooth={true} offset={-50} duration={500}>{t('navbar.contact')}</Link></li>          <li className='cursor-pointer'><LanguageSwitcher className="group" /></li>
         </ul>
         <div className='md:hidden flex items-center'>
           <LanguageSwitcher className="mr-4" />
@@ -94,8 +53,7 @@ const audioRef = useRef(new Audio('/Crescent-Moon-chosic.com.mp3'));
             <li><Link to="experience" onClick={closeNav} smooth={true} offset={-80} duration={500}>{t('navbar.experience')}</Link></li>
             <li><Link to="about" onClick={closeNav} smooth={true} offset={-50} duration={500}>{t('navbar.contact')}</Link></li>
           </ul>
-        </motion.div>
-      </div>
+        </motion.div>      </div>
     </div>
   );
 };

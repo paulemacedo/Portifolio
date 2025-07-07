@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Modal from "react-modal";
 import profilepic from "../assets/profpic.png";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineSound, AiOutlinePause } from "react-icons/ai";
+import AudioPermissionModal from "./AudioPermissionModal";
 import { 
     SiTryhackme, 
     SiHackthebox, 
@@ -34,7 +35,37 @@ const icons = [
 
 const Hero = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [showAudioModal, setShowAudioModal] = useState(true);
   const { t, i18n } = useTranslation();
+  const audioRef = useRef(new Audio('/Crescent-Moon-chosic.com.mp3'));
+
+  useEffect(() => {
+    audioRef.current.loop = true;
+  }, []);
+
+  const handleAcceptAudio = () => {
+    audioRef.current.play()
+      .then(() => {
+        console.log('Áudio ativado pelo usuário');
+        setIsPlaying(true);
+      })
+      .catch(err => {
+        console.log('Erro ao tentar tocar:', err);
+      });
+  };
+
+  const toggleAudio = () => {
+    if (!audioRef.current) return;
+
+    if (isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      audioRef.current.play().catch(err => console.log('Erro ao tentar tocar:', err));
+      setIsPlaying(true);
+    }
+  };
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -50,8 +81,14 @@ const Hero = () => {
     t("hero.cybersecurity"),
     1000,
   ];
-
   return (
+    <>
+      {showAudioModal && (
+        <AudioPermissionModal onAccept={() => {
+          handleAcceptAudio();
+          setShowAudioModal(false);
+        }} />
+      )}
     <div className="max-w-[1000px] mx-auto relative pt-24">
       <div className="grid md:grid-cols-2 place-items-center gap-8 p-12">
         <motion.div
@@ -141,14 +178,20 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/Paulemacedo/"
               >
                 <AiOutlineLinkedin />
-              </motion.a>
-
-              <motion.a
+              </motion.a>              <motion.a
                 whileHover={{ scale: 1.2 }}
                 href="https://tryhackme.com/r/p/paulemacedo"
               >
                 <SiTryhackme />
               </motion.a>
+
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                onClick={toggleAudio}
+                className="cursor-pointer"
+              >
+                {isPlaying ? <AiOutlinePause /> : <AiOutlineSound />}
+              </motion.div>
             </div>
           </motion.div>
         </motion.div>
@@ -190,12 +233,11 @@ const Hero = () => {
             </div>
           ))}
         </motion.div>
-      </motion.div>
-
-      <div className="absolute inset-0 hidden md:block">
+      </motion.div>      <div className="absolute inset-0 hidden md:block">
         <ShinyEffect left={0} top={0} size={1400} />
       </div>
     </div>
+    </>
   );
 };
 
