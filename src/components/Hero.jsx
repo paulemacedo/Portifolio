@@ -255,11 +255,11 @@ const Hero = () => {
               </h2>
               <div className="flex flex-col gap-4 items-start text-xl text-white">
                 <button
-                  onClick={() => (window.location.href = "/CV - PT-BR.pdf")}
+                  onClick={() => (window.location.href = "/CV-Paule-Macedo-PT-BR.pdf")}
                 >
                   {t("hero.brazilian_portuguese")}
                 </button>
-                <button onClick={() => (window.location.href = "/CV.pdf")}>
+                <button onClick={() => (window.location.href = "/CV-Paule-Macedo-EN.pdf")}>
                   {t("hero.english")}
                 </button>
               </div>
