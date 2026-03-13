@@ -16,12 +16,24 @@
     "experience": "Experiência",
     "contact": "Contato"
   },
+
+
   "education": {
     "title": "Educação",
-    "institution": "CEFET-RJ",
-    "degree": "Bacharel em Ciência da Computação",
-    "graduationDate": "Agosto 2026"
+    "institutions": [
+      {
+        "title": "IBMR",
+        "degree": "ado em Ciência da Computação",
+        "graduationDate": "Dezembro 2027"
+      },
+      {
+        "title": "CEFET-RJ",
+        "degree": "Bacharelado em Ciência da Computação",
+        "graduationDate": "Transferencia para o IBMR"
+      }
+    ]
   },
+
   "skills": {
     "title": "Habilidades",
     "frontend": "Frontend",

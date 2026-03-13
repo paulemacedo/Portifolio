@@ -18,9 +18,18 @@
   },
   "education": {
     "title": "Education",
-    "institution": "CEFET-RJ",
-    "degree": "Bachelor of Science in Computer Science",
-    "graduationDate": "August 2026"
+    "institutions": [
+      {
+        "title": "IBMR",
+        "degree": "Bachelor of Science in Computer Science",
+        "graduationDate": "December 2027"
+      },
+      {
+        "title": "CEFET-RJ",
+        "degree": "Bachelor of Science in Computer Science",
+        "graduationDate": "Transfer to IBMR"
+      }
+    ]
   },
   "skills": {
     "title": "Skills",

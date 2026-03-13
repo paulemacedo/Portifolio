@@ -3,16 +3,9 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import Reveal from './Reveal';
 
-const education = [
-  {
-    institution: 'education.institution',
-    degree: 'education.degree',
-    graduationDate: 'education.graduationDate',
-  }
-];
-
 const Education = () => {
   const { t } = useTranslation();
+  const institutions = t('education.institutions', { returnObjects: true });
 
   return (
     <div className='p-8 max-w-[800px] mx-auto'>
@@ -22,7 +15,7 @@ const Education = () => {
         initial="hidden"
         animate="visible"
       >
-        {education.map((edu, index) => (
+        {institutions.map((edu, index) => (
           <Reveal key={index}>
             <motion.div
               initial="hidden"
@@ -30,9 +23,9 @@ const Education = () => {
               transition={{ duration: 1 }}
               className='border border-purple-600 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 bg-purple-700/10'
             >
-              <h2 className='text-gray-100 text-2xl font-semibold'>{t(edu.institution)}</h2>
-              <h4 className='text-gray-200'>{t(edu.degree)}</h4>
-              <p className='text-gray-300'>{t(edu.graduationDate)}</p>
+              <h2 className='text-gray-100 text-2xl font-semibold'>{edu.title}</h2>
+              <h4 className='text-gray-200'>{edu.degree}</h4>
+              <p className='text-gray-300'>{edu.graduationDate}</p>
             </motion.div>
           </Reveal>
         ))}

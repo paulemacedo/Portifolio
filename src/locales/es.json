@@ -18,9 +18,18 @@
   },
   "education": {
     "title": "Educación",
-    "institution": "CEFET-RJ",
-    "degree": "Licenciatura en Ciencias de la Computación",
-    "graduationDate": "Agosto 2026"
+    "institutions": [
+      {
+        "title": "IBMR",
+        "degree": "Licenciatura en Ciencias de la Computación",
+        "graduationDate": "Diciembre 2027"
+      },
+      {
+        "title": "CEFET-RJ",
+        "degree": "Licenciatura en Ciencias de la Computación",
+        "graduationDate": "Transferencia al IBMR"
+      }
+    ]
   },
   "skills": {
     "title": "Habilidades",
