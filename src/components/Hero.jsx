@@ -226,40 +226,40 @@ const Hero = () => {
             {t("hero.description")}
           </motion.p>
 
-<motion.div
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 1, delay: 1.5 }}
-  className="flex items-center gap-4 mb-1 relative" /* Adicionado relative */
->
-  <span className="text-gray-400 text-xs uppercase tracking-widest font-semibold">
-    {t("hero.download_cv")}
-  </span>
-  <motion.a
-    href="/CV-Paule-Macedo-PT-BR.pdf"
-    whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(168, 85, 247, 0.4)" }}
-    whileTap={{ scale: 0.97 }}
-    className="flex items-center gap-1 cursor-pointer font-semibold text-gray-200 px-2 py-1 transition-colors rounded-full border border-purple-600 z-10" /* Adicionado z-10 */
-    title={t("hero.brazilian_portuguese")}
-    style={{ pointerEvents: "auto" }} /* Garantir que eventos de clique funcionem */
-  >
-    <span className="text-xl">🇧🇷</span>
-    <span className="text-sm">PT-BR</span>
-  </motion.a>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 1.5 }}
+            className="flex items-center gap-4 mb-1 relative" /* Adicionado relative */
+          >
+            <span className="text-gray-400 text-xs uppercase tracking-widest font-semibold">
+              {t("hero.download_cv")}
+            </span>
+            <motion.a
+              href="/CV-Paule-Macedo-PT-BR.pdf"
+              whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(168, 85, 247, 0.4)" }}
+              whileTap={{ scale: 0.97 }}
+              className="flex items-center gap-1 cursor-pointer font-semibold text-gray-200 px-2 py-1 transition-colors rounded-full border border-purple-600 z-10" /* Adicionado z-10 */
+              title={t("hero.brazilian_portuguese")}
+              style={{ pointerEvents: "auto" }} /* Garantir que eventos de clique funcionem */
+            >
+              <span className="text-xl">🇧🇷</span>
+              <span className="text-sm">PT-BR</span>
+            </motion.a>
 
-  <motion.a
-    href="/CV-Paule-Macedo-EN.pdf"
-    whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(168, 85, 247, 0.4)" }}
-    whileTap={{ scale: 0.97 }}
-    className="flex items-center gap-1 cursor-pointer font-semibold text-gray-200 px-2 py-1 transition-colors rounded-full border border-purple-600 z-10" /* Adicionado z-10 */
-    title={t("hero.english")}
-    style={{ pointerEvents: "auto" }} /* Garantir que eventos de clique funcionem */
-  >
-    <span className="text-xl">🇺🇸</span>
-    <span className="text-sm">EN</span>
-  </motion.a>
-</motion.div>
+            <motion.a
+              href="/CV-Paule-Macedo-EN.pdf"
+              whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(168, 85, 247, 0.4)" }}
+              whileTap={{ scale: 0.97 }}
+              className="flex items-center gap-1 cursor-pointer font-semibold text-gray-200 px-2 py-1 transition-colors rounded-full border border-purple-600 z-10" /* Adicionado z-10 */
+              title={t("hero.english")}
+              style={{ pointerEvents: "auto" }} /* Garantir que eventos de clique funcionem */
+            >
+              <span className="text-xl">🇺🇸</span>
+              <span className="text-sm">EN</span>
+            </motion.a>
+          </motion.div>
         
           <motion.div
             initial={{ opacity: 0, y: 50 }}
