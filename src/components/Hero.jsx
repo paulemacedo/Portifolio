@@ -226,44 +226,49 @@ const Hero = () => {
             {t("hero.description")}
           </motion.p>
 
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 1, delay: 1.5 }}
+  className="flex items-center gap-4 mb-1 relative" /* Adicionado relative */
+>
+  <span className="text-gray-400 text-xs uppercase tracking-widest font-semibold">
+    {t("hero.download_cv")}
+  </span>
+  <motion.a
+    href="/CV-Paule-Macedo-PT-BR.pdf"
+    whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(168, 85, 247, 0.4)" }}
+    whileTap={{ scale: 0.97 }}
+    className="flex items-center gap-1 cursor-pointer font-semibold text-gray-200 px-2 py-1 transition-colors rounded-full border border-purple-600 z-10" /* Adicionado z-10 */
+    title={t("hero.brazilian_portuguese")}
+    style={{ pointerEvents: "auto" }} /* Garantir que eventos de clique funcionem */
+  >
+    <span className="text-xl">🇧🇷</span>
+    <span className="text-sm">PT-BR</span>
+  </motion.a>
+
+  <motion.a
+    href="/CV-Paule-Macedo-EN.pdf"
+    whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(168, 85, 247, 0.4)" }}
+    whileTap={{ scale: 0.97 }}
+    className="flex items-center gap-1 cursor-pointer font-semibold text-gray-200 px-2 py-1 transition-colors rounded-full border border-purple-600 z-10" /* Adicionado z-10 */
+    title={t("hero.english")}
+    style={{ pointerEvents: "auto" }} /* Garantir que eventos de clique funcionem */
+  >
+    <span className="text-xl">🇺🇸</span>
+    <span className="text-sm">EN</span>
+  </motion.a>
+</motion.div>
+        
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="flex items-center flex-col md:flex-row gap-6 my-4 md:mb-0"
+            className="flex items-center flex-col md:flex-row gap-3 my-4 md:mb-0"
           >
-            <motion.a
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
-              }}
-              className="z-10 cursor-pointer font-bold text-gray-200 w-max p-3 border border-purple-400 rounded-xl"
-              onClick={openModal}
-            >
-              Download CV
-            </motion.a>
-            <Modal
-              isOpen={modalIsOpen}
-              onRequestClose={closeModal}
-              contentLabel="Select CV"
-              className="bg-purple-900 border border-opacity-50 border-purple-400 p-4 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[400px] z-50 backdrop-blur-md bg-opacity-20"
-              overlayClassName="fixed inset-0 bg-black bg-opacity-50 z-40 "
-            >
-              <h2 className="text-purple-700 pb-4 text-4xl">
-                {t("hero.select_cv_language")}
-              </h2>
-              <div className="flex flex-col gap-4 items-start text-xl text-white">
-                <button
-                  onClick={() => (window.location.href = "/CV-Paule-Macedo-PT-BR.pdf")}
-                >
-                  {t("hero.brazilian_portuguese")}
-                </button>
-                <button onClick={() => (window.location.href = "/CV-Paule-Macedo-EN.pdf")}>
-                  {t("hero.english")}
-                </button>
-              </div>
-            </Modal>            <div className="flex gap-6 flex-row text-4xl xl:text-6xl md:text-5xl text-purple-400 z-20 relative">
+            <div className="flex gap-6 flex-row text-4xl xl:text-6xl md:text-5xl text-purple-400 z-20 relative">
               <motion.a
                 whileHover={{ scale: 1.2 }}
                 href="https://github.com/paulemacedo"
