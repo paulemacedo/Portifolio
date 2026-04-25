@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import Modal from "react-modal";
 import profilepic from "../assets/profpic.png";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
@@ -34,7 +33,6 @@ const icons = [
 ];
 
 const Hero = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showAudioModal, setShowAudioModal] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(false);
@@ -137,12 +135,11 @@ const Hero = () => {
     }
   };
 
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
+  const handleDownloadCv = () => {
+    const currentLanguage = i18n.resolvedLanguage || i18n.language;
+    const cvPath = currentLanguage === "pt" ? "/CV-Paule-Macedo-PT-BR.pdf" : "/CV-Paule-Macedo-EN.pdf";
 
-  const closeModal = () => {
-    setModalIsOpen(false);
+    window.location.href = cvPath;
   };
 
   const animationTexts = [
@@ -225,16 +222,26 @@ const Hero = () => {
           >
             {t("hero.description")}
           </motion.p>
-         
 
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="flex flex-col gap-4 md:gap-4"
-
+            className="flex mb-5 items-center flex-col md:flex-row gap-6 my-4"
           >
+            <div className="flex flex-col items-center md:items-start gap-2">
+              <motion.a
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
+                }}
+                className="z-10 cursor-pointer font-bold text-gray-200 w-max p-3 border border-purple-400 rounded-xl"
+                onClick={handleDownloadCv}
+              >
+                {t("hero.download_cv")}
+              </motion.a>
+            </div>
             <div className="flex gap-6 flex-row text-4xl xl:text-6xl md:text-5xl text-purple-400 z-20 relative">
               <motion.a
                 whileHover={{ scale: 1.2 }}
@@ -276,45 +283,11 @@ const Hero = () => {
                 {isPlaying ? <AiOutlinePause /> : <AiOutlineSound />}
               </motion.div>
             </div>
-            
-            <div className="flex items-center gap-2 md:gap-4 mb-1 relative text-purple-400">
-            <span className="text-gray-400 text-xs uppercase tracking-widest font-semibold">
-              {t("hero.download_cv")}
-            </span>
-            <motion.a
-              href="/CV-Paule-Macedo-PT-BR.pdf"
-              whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(168, 85, 247, 0.4)" }}
-              whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-1 cursor-pointer font-semibold text-purple-400 px-2 py-1 transition-colors rounded-full border border-purple-400 z-10" /* Adicionado z-10 */
-              title={t("hero.brazilian_portuguese")}
-              style={{ pointerEvents: "auto" }} /* Garantir que eventos de clique funcionem */
-            >
-              <span className="text-xl">🇧🇷</span>
-              <span className="text-sm text-purple-400">PT-BR</span>
-            </motion.a>
-
-            <motion.a
-              href="/CV-Paule-Macedo-EN.pdf"
-              whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(168, 85, 247, 0.4)" }}
-              whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-1 cursor-pointer font-semibold text-purple-400 px-2 py-1 transition-colors rounded-full border border-purple-400 z-10" /* Adicionado z-10 */
-              title={t("hero.english")}
-              style={{ pointerEvents: "auto" }} /* Garantir que eventos de clique funcionem */
-            >
-              <span className="text-xl">🇺🇸</span>
-              <span className="text-sm text-purple-400">EN</span>
-            </motion.a>
-            </div>
-
-            <div className="flex items-center gap-4 mb-1 relative">
-
-            </div>
           </motion.div>
-                      
-        
+          <p className="text-[11px] md:text-xs text-gray-400 opacity-80 -mt-2 mb-2 text-center md:text-left">
+            {t("hero.cv_download_notice")}
+          </p>
         </motion.div>
-
-        
 
         <motion.img
           src={profilepic}

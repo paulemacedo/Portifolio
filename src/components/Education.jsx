@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import Reveal from './Reveal';
+import { a } from 'framer-motion/client';
 
 const Education = () => {
   const { t } = useTranslation();
@@ -26,6 +27,16 @@ const Education = () => {
               <h2 className='text-gray-100 text-2xl font-semibold'>{edu.title}</h2>
               <h4 className='text-gray-200'>{edu.degree}</h4>
               <p className='text-gray-300'>{edu.graduationDate}</p>
+              {Array.isArray(edu.description) ? (
+                <ul className='list-disc list-inside text-gray-300 mt-4'>
+                  {edu.description.map((desc, i) => (
+                    <li key={i} dangerouslySetInnerHTML={{ __html: desc }} className='mb-2'>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className='text-gray-300 mt-4'>{edu.description}</p>
+              )}
             </motion.div>
           </Reveal>
         ))}

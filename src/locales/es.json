@@ -5,6 +5,7 @@
     "greeting": "HOLA, SOY",
     "description": "Soy un desarrollador full stack brasileño con pasión por Linux y ciberseguridad, y también disfruto desarrollando aplicaciones web.",
     "download_cv": "Descargar CV",
+    "cv_download_notice": "La descarga del CV sigue el idioma seleccionado.",
     "select_cv_language": "Seleccionar idioma",
     "brazilian_portuguese": "Portugués Brasileño",
     "english": "Inglés"
@@ -22,12 +23,11 @@
       {
         "title": "IBMR",
         "degree": "Licenciatura en Ciencias de la Computación",
-        "graduationDate": "Diciembre 2027"
-      },
-      {
-        "title": "CEFET-RJ",
-        "degree": "Licenciatura en Ciencias de la Computación",
-        "graduationDate": "Transferencia al IBMR"
+        "graduationDate": "Diciembre 2027",
+        "description": [
+          "Transferí el curso de Ciencias de la Computación del CEFET-RJ al IBMR.",
+          "<strong>Cursos relevantes:</strong> Matemáticas Aplicadas, Algoritmos y Estructuras de Datos, Programación Orientada a Objetos, Sistemas Operativos, Redes de Computadoras, Ingeniería de Software, Ingeniería de Requisitos, Sistemas de Bases de Datos, Desarrollo de Software Web, Arquitectura de Computadoras, Lógica Matemática, Fundamentos de Blockchain." 
+        ]
       }
     ]
   },
@@ -37,6 +37,9 @@
     "backend": "Backend",
     "cybersecurity": "Ciberseguridad",
     "design_creativity": "Diseño",
+    "systems": "Sistemas",
+    "networks": "Redes",
+    "languages": "Idiomas",
     "description": "Tengo experiencia con las siguientes tecnologías:"
   },
   "portfolio": {

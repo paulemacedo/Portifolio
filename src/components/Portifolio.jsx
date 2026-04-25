@@ -55,16 +55,16 @@ const Portifolio = () => {
                 github: 'https://github.com/paulemacedo/CTF',
             }
         },
-        {
-            img: pybank,
-            title: t('portfolio.projects.3.title'),
-            skills: [<FaPython/>],
-            description: t('portfolio.projects.3.description'),
-            links: {
-                site: '',
-                github: 'https://github.com/paulemacedo/PyBank',
-            }
-        },
+        // {
+        //     img: pybank,
+        //     title: t('portfolio.projects.3.title'),
+        //     skills: [<FaPython/>],
+        //     description: t('portfolio.projects.3.description'),
+        //     links: {
+        //         site: '',
+        //         github: 'https://github.com/paulemacedo/PyBank',
+        //     }
+        // },
     ];
 
     return (

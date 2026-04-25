@@ -24,7 +24,7 @@ i18n
       caches: ['localStorage', 'cookie'],
       excludeCacheFor: ['cimode'], // languages to not persist (cookie, localStorage)
     },
-    whitelist: ['en', 'pt'],
+    whitelist: ['en', 'pt', 'es'],
     load: 'languageOnly', // load only the language code (e.g., 'en' instead of 'en-US')
     interpolation: {
       escapeValue: false,
