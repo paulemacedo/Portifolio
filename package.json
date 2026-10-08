@@ -1,7 +1,7 @@
 {
-  "name": "portifoliov2",
+  "name": "paule-macedo-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "3.5.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
