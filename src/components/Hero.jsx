@@ -136,8 +136,21 @@ const Hero = () => {
   };
 
   const handleDownloadCv = () => {
-    const currentLanguage = i18n.resolvedLanguage || i18n.language;
-    const cvPath = currentLanguage === "pt" ? "/CV-Paule-Macedo-PT-BR.pdf" : "/CV-Paule-Macedo-EN.pdf";
+    const currentLanguage = (i18n.resolvedLanguage || i18n.language || "en")
+      .replace("_", "-")
+      .toLowerCase();
+
+    const cvPaths = {
+      "pt-br": "/CV/CV-Paule-Macedo-PT-BR.pdf",
+      pt: "/CV/CV-Paule-Macedo-PT-BR.pdf",
+      "en-us": "/CV/CV-Paule-Macedo-EN-US.pdf",
+      en: "/CV/CV-Paule-Macedo-EN-US.pdf",
+      "es-es": "/CV/CV-Paule-Macedo-ES-ES.pdf",
+      es: "/CV/CV-Paule-Macedo-ES-ES.pdf",
+    };
+
+    const languageCode = currentLanguage.split("-")[0];
+    const cvPath = cvPaths[currentLanguage] || cvPaths[languageCode] || cvPaths.en;
 
     window.location.href = cvPath;
   };
