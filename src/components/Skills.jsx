@@ -27,7 +27,6 @@ const Skills = () => {
                 { name: 'Linux (Arch / Ubuntu)' },
                 { name: 'Bash / Shell Script' },
                 { name: 'Hardening / sysctl' },
-                { name: 'Dual Boot' },
                 { name: 'Git' },
             ],
         },
@@ -69,7 +68,7 @@ const Skills = () => {
             technologies: [
                 { name: 'Figma' },
                 { name: 'DaVinci Resolve' },
-                { name: 'Unity / C#' },
+                { name: 'Unity' },
                 { name: 'GIMP' },
             ],
         },

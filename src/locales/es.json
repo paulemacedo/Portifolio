@@ -44,6 +44,13 @@
   },
   "portfolio": {
     "title": "Proyectos",
+    "filters": {
+      "label": "Filtrar proyectos por categoría",
+      "all": "Todos",
+      "fullstack": "Full-Stack",
+      "cybersecurity": "Ciberseguridad",
+      "automation": "Automatización & Scripts"
+    },
     "projects": [
       {
         "title": "Byte de Sabor",
@@ -58,8 +65,8 @@
         "description": "Un repositorio con desafíos CTF que enfrenté para mejorar mis habilidades en ciberseguridad en plataformas como TryHackMe, Hack The Box, Let's Defend o en un laboratorio personal."
       },
       {
-        "title": "PyBank",
-        "description": "PyBank es un sistema bancario basado en Python con gestión de cuentas, manejo de transacciones y autenticación de usuarios."
+        "title": "Cvgen",
+        "description": "Generador de currículos en HTML y PDF con plantillas profesionales, soporte multilingüe y una CLI organizada para producción usando Jinja2 y Playwright."
       }
     ]
   },
@@ -67,14 +74,26 @@
     "title": "Experiencia",
     "experiences": [
       {
+        "company": "Axofix",
+        "role": "Técnico en Mantenimiento de Dispositivos Móviles",
+        "location": "Rio de Janeiro, RJ, Brasil",
+        "duration": "Enero 2023 - Presente",
+        "description": [
+          "Realizo <strong>diagnóstico lógico y físico</strong> de smartphones y dispositivos móviles, identificando causas raíz y garantizando la continuidad operacional de los equipos.",
+          "Ejecuto <strong>mantenimiento preventivo y correctivo</strong>, incluyendo reemplazo de componentes y reparaciones a nivel de placa, siguiendo procedimientos técnicos y estándares de calidad.",
+          "Atiendo directamente al <strong>cliente</strong>, registrando requerimientos, gestionando el flujo completo de servicios y garantizando entregas dentro de los plazos acordados."
+        ]
+      },
+      {
         "company": "RNP",
-        "role": "Investigador en Formación",
-        "location": "Remoto | Rio de Janeiro, RJ",
+        "role": "Ingeniero de Software (Iniciación Científica)",
+        "location": "Rio de Janeiro, RJ, Brasil",
         "duration": "Junio 2023 - Septiembre 2024",
         "description": [
-          "<strong>Universalicé</strong> la selección de puertos de red en el middleware Ginga para soportar <strong>Windows/Linux</strong> (además de <strong>macOS</strong>), eliminando dependencias específicas de hardware. Impacto: Permitió demostraciones de proyectos en más de <strong>4 ferias nacionales de tecnología</strong> y amplió la compatibilidad para diversos entornos.",
-          "<strong>Desarrollé</strong> plantillas de perfil de usuario para <strong>TV Inmersiva (HTML/CSS/JavaScript)</strong> y <strong>Realidad Virtual (Unity/C#)</strong>, desplegadas en más de <strong>4 eventos nacionales</strong>. Impacto: Optimicé la interacción para más de <strong>200 visitantes</strong> y aumenté el compromiso de los usuarios durante demostraciones en vivo.",
-          "<strong>Configuré</strong> dual-boot (<strong>Ubuntu/Windows</strong>) en más de <strong>3 laptops de proyecto</strong> y <strong>validé</strong> la comunicación middleware-dispositivo a través de <strong>Insomnia API</strong>. Impacto: Reduje fallos críticos en un <strong>60%</strong> durante demostraciones de alto riesgo."
+          "Desarrollé plantillas para pantallas de perfil en <strong>HTML/CSS/JavaScript (TV)</strong> y <strong>Unity/C# (VR)</strong>, utilizadas en <strong>4+ eventos nacionales</strong> y facilitando la interacción de <strong>200+ visitantes</strong>.",
+          "Universalicé la selección de puertos de red en el middleware Ginga, permitiendo conexiones estables en <strong>Windows, Linux y macOS</strong> y eliminando la dependencia de hardware específico.",
+          "Validé la comunicación vía <strong>Insomnia y APIs REST</strong> entre el middleware y dispositivos Oculus VR, garantizando la integridad de la integración y la estabilidad del flujo de datos.",
+          "Implementé dual boot (<strong>Ubuntu/Windows</strong>) en <strong>3+ laptops</strong> y aseguré la continuidad operacional, reduciendo en un <strong>60%</strong> las fallas críticas durante demostraciones técnicas en vivo."
         ]
       }
     ]

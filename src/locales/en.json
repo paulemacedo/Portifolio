@@ -44,6 +44,13 @@
   },
   "portfolio": {
     "title": "Projects",
+    "filters": {
+      "label": "Filter projects by category",
+      "all": "All",
+      "fullstack": "Full-Stack",
+      "cybersecurity": "Cybersecurity",
+      "automation": "Automation & Scripts"
+    },
     "projects": [
       {
         "title": "Byte de Sabor",
@@ -58,8 +65,8 @@
         "description": "A repository with CTF challenges I faced to improve my cybersecurity skills on platforms like TryHackMe, Hack The Box, Let's Defend, or in a personal lab."
       },
       {
-        "title": "PyBank",
-        "description": "PyBank is a Python-based banking system with account management, transaction handling, and user authentication."
+        "title": "Cvgen",
+        "description": "HTML and PDF resume generator with professional templates, multilingual support, and a production-ready CLI using Jinja2 and Playwright."
       }
     ]
   },
@@ -67,14 +74,26 @@
     "title": "Experience",
     "experiences": [
       {
+        "company": "Axofix",
+        "role": "Mobile Device Repair Technician",
+        "location": "Rio de Janeiro, RJ, Brazil",
+        "duration": "January 2023 - Present",
+        "description": [
+          "Perform <strong>logical and physical diagnosis</strong> of smartphones and mobile devices, identifying root causes and ensuring device operational continuity.",
+          "Execute <strong>preventive and corrective maintenance</strong>, including component replacement and board-level repairs, following technical procedures and quality standards.",
+          "Provide <strong>direct customer support</strong>, documenting requests, managing the complete service workflow, and ensuring delivery within agreed timelines."
+        ]
+      },
+      {
         "company": "RNP",
-        "role": "Undergraduate Researcher",
-        "location": "Remote | Rio de Janeiro, RJ",
+        "role": "Software Engineer (Undergraduate Researcher)",
+        "location": "Rio de Janeiro, RJ, Brazil",
         "duration": "June 2023 - September 2024",
         "description": [
-          "<strong>Universalized</strong> network port selection in the middleware Ginga to support <strong>Windows/Linux</strong> (in addition to <strong>macOS</strong>), eliminating hardware-specific dependencies. Impact: Enabled project demonstrations at more than <strong>4 national tech fairs</strong> and expanded compatibility for diverse environments.",
-          "<strong>Developed</strong> user profile templates for <strong>Immersive TV (HTML/CSS/JavaScript)</strong> and <strong>Virtual Reality (Unity/C#)</strong>, deployed at more than <strong>4 national events</strong>. Impact: Streamlined interaction for more than <strong>200 visitors</strong> and enhanced user engagement during live demos.",
-          "<strong>Configured</strong> dual-boot (<strong>Ubuntu/Windows</strong>) on more than <strong>3 project laptops</strong> and <strong>validated</strong> middleware-device communication via <strong>Insomnia API</strong>. Impact: Reduced critical failures by <strong>60%</strong> during high-stakes demonstrations."
+          "Developed user profile templates for <strong>Immersive TV (HTML/CSS/JavaScript)</strong> and <strong>Virtual Reality (Unity/C#)</strong>, deployed at <strong>4+ national events</strong> and streamlining interaction for <strong>200+ visitors</strong>.",
+          "Universalized network port selection in the Ginga middleware, enabling stable connections across <strong>Windows, Linux, and macOS</strong> and eliminating hardware-specific dependencies.",
+          "Validated communication via <strong>Insomnia and REST APIs</strong> between the middleware and Oculus VR devices, ensuring integration integrity and data flow stability.",
+          "Configured dual-boot (<strong>Ubuntu/Windows</strong>) on <strong>3+ laptops</strong> and ensured operational continuity, reducing critical failures by <strong>60%</strong> during live technical demonstrations."
         ]
       }
     ]

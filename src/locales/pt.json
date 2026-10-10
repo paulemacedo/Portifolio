@@ -47,6 +47,13 @@
   },
   "portfolio": {
     "title": "Projetos",
+    "filters": {
+      "label": "Filtrar projetos por categoria",
+      "all": "Todos",
+      "fullstack": "Full-Stack",
+      "cybersecurity": "Cibersegurança",
+      "automation": "Automação & Scripts"
+    },
     "projects": [
       {
         "title": "Byte de Sabor",
@@ -61,8 +68,8 @@
         "description": "Um repositório com desafios CTF que enfrentei para aprimorar minhas habilidades em cibersegurança em plataformas como TryHackMe, Hack The Box, Let's Defend ou em um lab pessoal."
       },
       {
-        "title": "PyBank",
-        "description": "PyBank é um projeto de sistema bancário baseado em Python que apresenta gerenciamento de contas, manipulação de transações e autenticação de usuários."
+        "title": "Cvgen",
+        "description": "Gerador de currículos em HTML e PDF com templates profissionais, suporte a múltiplos idiomas e uma CLI organizada para produção, usando Jinja2 e Playwright."
       }
     ]
   },
@@ -70,14 +77,26 @@
     "title": "Experiência",
     "experiences": [
       {
+        "company": "Axofix",
+        "role": "Técnico em Manutenção de Dispositivos Móveis",
+        "location": "Rio de Janeiro, RJ, Brasil",
+        "duration": "Janeiro 2023 - Presente",
+        "description": [
+          "Realizo <strong>diagnóstico lógico e físico</strong> de smartphones e dispositivos móveis, identificando causas-raiz e garantindo a continuidade operacional dos aparelhos.",
+          "Executo <strong>manutenção preventiva e corretiva</strong>, incluindo substituição de componentes e reparos em placa, seguindo procedimentos técnicos e padrões de qualidade.",
+          "Atuo no <strong>atendimento direto ao cliente</strong>, registrando demandas, gerenciando o fluxo completo de serviços e garantindo retorno dentro dos prazos acordados."
+        ]
+      },
+      {
         "company": "RNP",
-        "role": "Iniciação Científica",
-        "location": "Remoto | Rio de Janeiro, RJ",
+        "role": "Engenheiro de Software (Iniciação Científica)",
+        "location": "Rio de Janeiro, RJ, Brasil",
         "duration": "Junho 2023 - Setembro 2024",
         "description": [
-          "<strong>Universalizei</strong> a seleção de portas de rede no middleware Ginga para suportar <strong>Windows/Linux</strong> (além de <strong>macOS</strong>), eliminando dependências específicas de hardware. Impacto: Permitiu demonstrações de projetos em mais de <strong>4 feiras nacionais de tecnologia</strong> e expandiu a compatibilidade para diversos ambientes.",
-          "<strong>Desenvolvi</strong> templates de perfil de usuário para <strong>TV Imersiva (HTML/CSS/JavaScript)</strong> e <strong>Realidade Virtual (Unity/C#)</strong>, implantados em mais de <strong>4 eventos nacionais</strong>. Impacto: Otimizou a interação para mais de <strong>200 visitantes</strong> e aumentou o engajamento dos usuários durante demonstrações ao vivo.",
-          "<strong>Configurei</strong> dual-boot (<strong>Ubuntu/Windows</strong>) em mais de <strong>3 laptops de projeto</strong> e <strong>validei</strong> a comunicação middleware-dispositivo via <strong>Insomnia API</strong>. Impacto: Reduziu falhas críticas em <strong>60%</strong> durante demonstrações de alto risco."
+          "Criei templates para telas de perfil em <strong>HTML/CSS/JavaScript (TV)</strong> e <strong>Unity/C# (VR)</strong>, utilizados em <strong>4+ eventos nacionais</strong> e facilitando a interação de <strong>200+ visitantes</strong>.",
+          "Universalizei a seleção de portas de rede no middleware Ginga, permitindo conexões estáveis em <strong>Windows, Linux e macOS</strong> e eliminando a dependência de hardware específico.",
+          "Validei a comunicação via <strong>Insomnia e APIs REST</strong> entre o middleware e dispositivos Oculus VR, garantindo a integridade da integração e a estabilidade do fluxo de dados.",
+          "Implementei dual boot (<strong>Ubuntu/Windows</strong>) em <strong>3+ notebooks</strong> e assegurei a continuidade operacional, reduzindo em <strong>60%</strong> as falhas críticas durante demonstrações técnicas ao vivo."
         ]
       }
     ]

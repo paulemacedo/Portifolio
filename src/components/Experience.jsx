@@ -6,14 +6,13 @@ import Reveal from './Reveal';
 const Experience = () => {
   const { t } = useTranslation();
 
-  const experiences = [
-    {
-      company: t('experience.experiences.0.company'),
-      role: t('experience.experiences.0.role'),
-      description: t('experience.experiences.0.description', { returnObjects: true }),
-      duration: t('experience.experiences.0.duration'),
-    }
-  ];
+  const experiences = [0, 1].map((index) => ({
+    company: t(`experience.experiences.${index}.company`),
+    role: t(`experience.experiences.${index}.role`),
+    location: t(`experience.experiences.${index}.location`),
+    description: t(`experience.experiences.${index}.description`, { returnObjects: true }),
+    duration: t(`experience.experiences.${index}.duration`),
+  }));
 
   return (
     <div className='p-4 sm:p-8 max-w-full sm:max-w-[800px] mx-auto'>
@@ -32,8 +31,13 @@ const Experience = () => {
               className='border border-purple-600 p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 bg-purple-700/10 w-full'
             >
               <div className='justify-between flex items-center'>
-                <h2 className='text-gray-100 text-xl sm:text-2xl font-semibold'>{experience.company}</h2>
-                <p className='text-gray-300 text-sm sm:text-base'>{experience.duration}</p>
+                <div>
+                  <h2 className='text-gray-100 text-xl sm:text-2xl font-semibold'>{experience.company}</h2>
+                  {experience.location && (
+                    <p className='text-gray-400 text-sm'>{experience.location}</p>
+                  )}
+                </div>
+                <p className='text-gray-300 text-sm sm:text-base text-right'>{experience.duration}</p>
               </div>
               <h4 className='text-gray-200 mb-2 sm:mb-4 text-base md:text-lg'>{experience.role}</h4>
               {Array.isArray(experience.description) ? (
