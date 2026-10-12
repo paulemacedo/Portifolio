@@ -141,12 +141,12 @@ const Hero = () => {
       .toLowerCase();
 
     const cvPaths = {
-      "pt-br": "/CV/CV-Paule-Macedo-IT-PT-BR.pdf",
-      pt: "/CV/CV-Paule-Macedo-IT-PT-BR.pdf",
-      "en-us": "/CV/CV-Paule-Macedo-IT-EN-US.pdf",
-      en: "/CV/CV-Paule-Macedo-IT-EN-US.pdf",
-      "es-es": "/CV/CV-Paule-Macedo-IT-ES-ES.pdf",
-      es: "/CV/CV-Paule-Macedo-IT-ES-ES.pdf",
+      "pt-br": "/CV-Paule-Macedo-IT-PT-BR.pdf",
+      pt: "/CV-Paule-Macedo-IT-PT-BR.pdf",
+      "en-us": "/CV-Paule-Macedo-IT-EN-US.pdf",
+      en: "/CV-Paule-Macedo-IT-EN-US.pdf",
+      "es-es": "/CV-Paule-Macedo-IT-ES-ES.pdf",
+      es: "/CV-Paule-Macedo-IT-ES-ES.pdf",
     };
 
     const languageCode = currentLanguage.split("-")[0];
