@@ -76,6 +76,10 @@
       {
         "title": "Cvgen",
         "description": "Gerador de currículos em HTML e PDF com templates profissionais, suporte a múltiplos idiomas e uma CLI organizada para produção, usando Jinja2 e Playwright."
+      },
+      {
+        "title": "Tributo ao Depeche Mode",
+        "description": "Uma página de tributo ao Depeche Mode, criada como um projeto pessoal para apresentar a história e a influência da banda."
       }
     ]
   },

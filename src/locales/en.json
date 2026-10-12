@@ -73,6 +73,10 @@
       {
         "title": "Cvgen",
         "description": "HTML and PDF resume generator with professional templates, multilingual support, and a production-ready CLI using Jinja2 and Playwright."
+      },
+      {
+        "title": "Depeche Mode Tribute",
+        "description": "A Depeche Mode tribute page created as a personal project to present the band's history and influence."
       }
     ]
   },

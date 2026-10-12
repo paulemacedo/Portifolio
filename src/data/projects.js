@@ -3,6 +3,7 @@ import bytedesabor from "../assets/bytedesabor.png";
 import caseflux from "../assets/Caseflux.png";
 import CTF from "../assets/CTF.png";
 import cvgen from "../assets/cvgen.png";
+import depecheMode from "../assets/depeche-mode.png";
 
 export const projects = [
     {
@@ -27,6 +28,18 @@ export const projects = [
         links: {
             site: "https://bytedesabor.vercel.app/",
             github: "https://github.com/paulemacedo/bytedesabor",
+        },
+    },
+    {
+        id: "depeche-mode",
+        category: "fullstack",
+        variant: "featured",
+        image: depecheMode,
+        translationKey: 5,
+        technologies: ["html", "css", "javascript"],
+        links: {
+            site: "https://depeche-mode.vercel.app/",
+            github: "https://github.com/paulemacedo/depeche-mode",
         },
     },
     {
