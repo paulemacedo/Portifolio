@@ -37,7 +37,7 @@ const Hero = () => {
   const [showAudioModal, setShowAudioModal] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(false);
   const { t, i18n } = useTranslation();
-  const audioRef = useRef(new Audio('/Crescent-Moon-chosic.com.mp3'));useEffect(() => {
+  const audioRef = useRef(new Audio('/Crescent Moon by Purrple Cat.mp3'));useEffect(() => {
     audioRef.current.loop = true;
     
     const checkAudioPermissions = async () => {
