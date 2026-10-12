@@ -49,9 +49,14 @@
       "all": "Todos",
       "fullstack": "Full-Stack",
       "cybersecurity": "Ciberseguridad",
-      "automation": "Automatización & Scripts"
+      "automation": "Automatización & Scripts",
+      "see_all": "Ver todos"
     },
     "projects": [
+      {
+        "title": "CaseFlux",
+        "description": "Una herramienta web para convertir textos a diferentes formatos de capitalización y crear nombres de archivo estandarizados con el formato Autor - Título."
+      },
       {
         "title": "Byte de Sabor",
         "description": "Byte de Sabor es un sitio web de tienda de açaí desarrollado con React. Cuenta con un diseño moderno y responsivo, mostrando los productos y servicios de la tienda."
@@ -112,6 +117,6 @@
   },
   "footer": {
     "name": "Paule M",
-    "rights": "© 2025 Paule Macedo. Todos los derechos reservados."
+    "rights": "© 2026 Paule Macedo. Todos los derechos reservados."
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import Reveal from './Reveal';
+import Reveal from '../components/Reveal';
 import { a } from 'framer-motion/client';
 
 const Education = () => {

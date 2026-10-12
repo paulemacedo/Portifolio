@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Skills from "./components/Skills";
-import Portifolio from "./components/Portifolio";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
+import Hero from "./sections/Hero";
+import Skills from "./sections/Skills";
+import Portifolio from "./sections/Portifolio";
+import Experience from "./sections/Experience";
+import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
-import Education from "./components/Education";
+import Education from "./sections/Education";
 
 export default function App() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Reveal from "./Reveal";
+import Reveal from "../components/Reveal";
 import { useTranslation } from 'react-i18next';
 
 

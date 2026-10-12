@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import profilepic from "../assets/profpic.png";
 import { TypeAnimation } from "react-type-animation";
-import ShinyEffect from "./ShinyEffect";
+import ShinyEffect from "../components/ShinyEffect";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineSound, AiOutlinePause } from "react-icons/ai";
-import AudioPermissionModal from "./AudioPermissionModal";
+import AudioPermissionModal from "../components/AudioPermissionModal";
 import { 
   SiTryhackme, 
   SiHackthebox, 
