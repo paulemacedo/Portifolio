@@ -1,9 +1,10 @@
 {
   "hero": {
-    "software_engineer": "Fullstack dev",
-    "cybersecurity": "Cybersecurity",
+    "software_engineer": "Full-stack Developer",
+    "cybersecurity": "Cybersecurity Analyst",
+    "automation": "Linux Automation Specialist",
     "greeting": "HEY, I'M",
-    "description": "I'm a full stack developer based in Brazil with a passion for Linux and cybersecurity, and also enjoy developing web applications.",
+    "description": "Full-stack Developer with a strong foundation in Linux and Cybersecurity. I build modern, secure web applications by combining software architecture, infrastructure automation, and data protection.",
     "download_cv": "Download CV",
     "cv_download_notice": "CV download follows the selected language.",
     "select_cv_language": "Select language",

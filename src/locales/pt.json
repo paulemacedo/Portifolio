@@ -1,9 +1,10 @@
 {
   "hero": {
-    "software_engineer": "Desenvolvedor Fullstack",
-    "cybersecurity": "Cibersegurança",
+    "software_engineer": "Desenvolvedor Full-stack",
+    "cybersecurity": "Analista de Cibersegurança",
+    "automation": "Especialista em Automação Linux",
     "greeting": "OLÁ, EU SOU",
-    "description": "Sou um desenvolvedor full stack Brasileiro com paixão por Linux e cibersegurança, e também gosto de desenvolver aplicações web.",
+    "description": "Desenvolvedor Full-stack com forte base em Linux e Cibersegurança. Construo aplicações web modernas e seguras, unindo arquitetura de software, automação de infraestrutura e proteção de dados.",
     "download_cv": "Baixar CV",
     "cv_download_notice": "O download do CV segue o idioma selecionado.",
     "select_cv_language": "Selecione o idioma",

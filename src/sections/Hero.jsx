@@ -160,6 +160,8 @@ const Hero = () => {
     1000,
     t("hero.cybersecurity"),
     1000,
+    t("hero.automation"),
+    1000,
   ];  return (
     <>
       {showAudioModal && (
@@ -207,24 +209,24 @@ const Hero = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <TypeAnimation
-            sequence={animationTexts}
-            repeat={Infinity}
-            speed={50}
-            className="font-bold text-xl md:text-3xl xl:text-4xl text-gray-400 italic mb-4"
-            key={i18n.language}
-          />
-
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-gray-200 md:text-5xl tracking-tight mb-4"
+            className="text-gray-200 md:text-5xl tracking-tight"
           >
             {t("hero.greeting")} <br />
             <span className="text-purple-500">PAULE MACEDO</span>
           </motion.p>
+
+          <TypeAnimation
+            sequence={animationTexts}
+            repeat={Infinity}
+            speed={50}
+            className="block font-bold text-lg md:text-xl xl:text-2xl text-gray-400 italic mb-4"
+            key={i18n.language}
+          />
 
           <motion.p
             initial={{ opacity: 0 }}
