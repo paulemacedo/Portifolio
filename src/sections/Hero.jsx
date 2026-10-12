@@ -41,68 +41,50 @@ const Hero = () => {
     audioRef.current.loop = true;
     
     const checkAudioPermissions = async () => {
-      // Verificar se o usuário já recusou anteriormente
       const audioPermission = localStorage.getItem('audioPermission');
       
       if (audioPermission === 'denied') {
-        // Se recusou anteriormente, não tentar tocar e não mostrar modal
         setShowAudioModal(false);
         setShowPlayButton(false);
         return;
       }
 
-      // Primeiro, tentar tocar automaticamente (funciona no Firefox e outros)
-      try {
-        audioRef.current.volume = 1;
-        audioRef.current.muted = false;
-        await audioRef.current.play();
-        
-        // Se conseguiu tocar, salvar permissão e não mostrar modal
-        localStorage.setItem('audioPermission', 'granted');
-        setIsPlaying(true);
-        setShowAudioModal(false);
+      if (!audioPermission) {
+        setShowAudioModal(true);
         setShowPlayButton(false);
-        console.log('Áudio tocando automaticamente');
-        
-      } catch (err) {
-        // Se falhou (Chrome e navegadores restritivos), verificar se já tinha permissão
-        if (audioPermission === 'granted') {
-          // Usuário já deu permissão antes, mostrar botão simples
+        return;
+      }
+
+      if (audioPermission === 'granted') {
+        try {
+          audioRef.current.volume = 1;
+          audioRef.current.muted = false;
+          await audioRef.current.play();
+          setIsPlaying(true);
+          setShowAudioModal(false);
+          setShowPlayButton(false);
+        } catch {
           setShowPlayButton(true);
           setShowAudioModal(false);
-        } else {
-          // Primeira vez que falha, mostrar modal de permissão
-          setShowAudioModal(true);
-          setShowPlayButton(false);
         }
-        console.log('Autoplay bloqueado, mostrando UI de permissão');
       }
     };
 
     checkAudioPermissions();
-  }, []);  const handleAcceptAudio = () => {
-    // Salvar permissão no localStorage
-    localStorage.setItem('audioPermission', 'granted');
-    
-    // Garantir que o áudio esteja configurado corretamente
+  }, []);
+
+  const handleAcceptAudio = () => {
     audioRef.current.volume = 1;
     audioRef.current.muted = false;
-    
+
     audioRef.current.play()
       .then(() => {
-        console.log('Áudio ativado pelo usuário');
         setIsPlaying(true);
+        setShowAudioModal(false);
       })
-      .catch(err => {
-        console.log('Erro ao tentar tocar:', err);
-        // Se falhar, tentar novamente após um pequeno delay
-        setTimeout(() => {
-          audioRef.current.play()
-            .then(() => {
-              setIsPlaying(true);
-            })
-            .catch(e => console.log('Segundo erro ao tentar tocar:', e));
-        }, 100);
+      .catch(() => {
+        setShowPlayButton(true);
+        setShowAudioModal(false);
       });
   };
 

@@ -7,6 +7,14 @@
     "description": "Desenvolvedor Full-stack com forte base em Linux e Cibersegurança. Construo aplicações web modernas e seguras, unindo arquitetura de software, automação de infraestrutura e proteção de dados.",
     "download_cv": "Baixar CV",
     "cv_download_notice": "O download do CV segue o idioma selecionado.",
+    "audio": {
+      "title": "Áudio de fundo",
+      "description": "Você quer ouvir uma música de fundo durante a visita?",
+      "tipLabel": "Dica",
+      "tip": "Você pode pausar ou retomar o áudio a qualquer momento pelo ícone de som.",
+      "decline": "Não, obrigado",
+      "accept": "Permitir e tocar"
+    },
     "select_cv_language": "Selecione o idioma",
     "brazilian_portuguese": "Português Brasileiro",
     "english": "Inglês"

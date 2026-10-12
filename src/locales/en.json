@@ -7,6 +7,14 @@
     "description": "Full-stack Developer with a strong foundation in Linux and Cybersecurity. I build modern, secure web applications by combining software architecture, infrastructure automation, and data protection.",
     "download_cv": "Download CV",
     "cv_download_notice": "CV download follows the selected language.",
+    "audio": {
+      "title": "Background audio",
+      "description": "Would you like to listen to background music while browsing?",
+      "tipLabel": "Tip",
+      "tip": "You can pause or resume the audio at any time using the sound icon.",
+      "decline": "No, thanks",
+      "accept": "Allow and play"
+    },
     "select_cv_language": "Select language",
     "brazilian_portuguese": "Brazilian Portuguese",
     "english": "English"
